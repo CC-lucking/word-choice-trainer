@@ -1,5 +1,6 @@
 const CACHE_NAME = "word-choice-trainer-v1";
-const APP_SHELL = ["/", "/words.json", "/manifest.webmanifest", "/icon-192.png", "/icon-512.png"];
+const APP_ROOT = new URL("./", self.location.href).href;
+const APP_SHELL = ["./", "./words.json", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
@@ -28,7 +29,7 @@ self.addEventListener("fetch", (event) => {
       .catch(async () => {
         const cached = await caches.match(request);
         if (cached) return cached;
-        if (request.mode === "navigate") return caches.match("/");
+        if (request.mode === "navigate") return caches.match(APP_ROOT);
         return new Response("Offline", { status: 503 });
       }),
   );

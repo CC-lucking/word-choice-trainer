@@ -32,6 +32,15 @@ npm run build
 npm test
 ```
 
+GitHub Pages 静态版本：
+
+```bash
+npm run build:pages
+```
+
+推送到 `main` 后，GitHub Actions 会自动发布到：
+`https://cc-lucking.github.io/word-choice-trainer/`
+
 ## 项目结构
 
 - `app/page.tsx`：练习流程、发音、选项生成和错题逻辑

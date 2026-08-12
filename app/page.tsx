@@ -151,7 +151,7 @@ export default function Home() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    fetch("/words.json")
+    fetch(new URL("words.json", document.baseURI))
       .then((response) => {
         if (!response.ok) throw new Error("词库加载失败");
         return response.json();
@@ -192,7 +192,7 @@ export default function Home() {
 
   useEffect(() => {
     if (!("serviceWorker" in navigator) || window.location.protocol !== "https:") return;
-    navigator.serviceWorker.register("/sw.js").catch(() => {
+    navigator.serviceWorker.register(new URL("sw.js", document.baseURI)).catch(() => {
       // Installation and offline mode are optional; online practice still works.
     });
   }, []);
