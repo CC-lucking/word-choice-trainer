@@ -1,7 +1,7 @@
 {
-  "name": "词选｜初中英语四选一识义训练",
+  "name": "词选｜北京河北中考英语2000词",
   "short_name": "词选",
-  "description": "听发音，选词义，把单词练成第一反应。",
+  "description": "北京、河北中考适用的2000词合并词库。",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

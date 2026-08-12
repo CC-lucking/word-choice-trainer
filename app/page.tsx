@@ -776,7 +776,7 @@ export default function Home() {
           <span className="brand-mark">词</span>
           <span>词选</span>
         </div>
-        <div className="nav-note">初中英语 · 四选一识义训练</div>
+        <div className="nav-note">北京＋河北中考 · 2000词识义训练</div>
       </nav>
 
       <section className="hero-section">
@@ -784,7 +784,7 @@ export default function Home() {
           <p className="eyebrow">听见 · 认出 · 记住</p>
           <h1>听发音，选词义。<br />把单词练成第一反应。</h1>
           <p className="hero-description">
-            每个新词自动播放美式发音。答对立即进入下一题，答错停留三秒，并在稍后自动重现。
+            课标核心词与两地中考高价值阅读词合并整理。答对立即进入下一题，答错停留三秒，并在稍后自动重现。
           </p>
 
           <div className="hero-actions">

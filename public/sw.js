@@ -1,4 +1,4 @@
-const CACHE_NAME = "word-choice-trainer-v1";
+const CACHE_NAME = "word-choice-trainer-v2";
 const APP_ROOT = new URL("./", self.location.href).href;
 const APP_SHELL = ["./", "./words.json", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 

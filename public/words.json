@@ -296,9 +296,9 @@
   {
     "id": 43,
     "word": "at",
-    "pos": "prep./n.",
+    "pos": "prep.",
     "primaryPos": "prep",
-    "meaning": "在（表示存在或出现的地点、场所、位置、空间）；以（某种价格、速度等）；向；达"
+    "meaning": "在；向；以"
   },
   {
     "id": 44,
@@ -1481,7 +1481,7 @@
     "word": "sweet",
     "pos": "adj./n.",
     "primaryPos": "adj",
-    "meaning": "甜的；和蔼的， 温柔的；可爱的， 讨人喜欢的；芳香的， 悦耳的， 悦目的"
+    "meaning": "甜的；悦耳的；可爱的；糖果"
   },
   {
     "id": 213,
@@ -2333,9 +2333,9 @@
   {
     "id": 334,
     "word": "heavy",
-    "pos": "adj./n./adv.",
+    "pos": "adj.",
     "primaryPos": "adj",
-    "meaning": "重的， 重型的；大量的， 密集的；严重的， 严厉的；剧烈的， 繁重的"
+    "meaning": "重的；大量的；严重的；繁重的"
   },
   {
     "id": 335,
@@ -2823,9 +2823,9 @@
   {
     "id": 404,
     "word": "low",
-    "pos": "adj./adv./n./v.",
+    "pos": "adj./adv.",
     "primaryPos": "adj",
-    "meaning": "低的， 矮的；低下的， 低等的；粗劣的， 低俗的；不充分的， 缺乏的"
+    "meaning": "低的；矮的；不足的；低声地"
   },
   {
     "id": 405,
@@ -2909,7 +2909,7 @@
     "word": "stairs",
     "pos": "n.",
     "primaryPos": "n",
-    "meaning": "楼梯；梯级（stair的复数）"
+    "meaning": "楼梯"
   },
   {
     "id": 417,
@@ -3194,9 +3194,9 @@
   {
     "id": 457,
     "word": "over",
-    "pos": "adv./prep./adj./n.",
-    "primaryPos": "adv",
-    "meaning": "在…上方， 在…上面；越过， 从一侧到另一侧；高于， 超过；在…期间"
+    "pos": "prep./adv./adj.",
+    "primaryPos": "prep",
+    "meaning": "在…上方；越过；超过；结束的"
   },
   {
     "id": 458,
@@ -3481,9 +3481,9 @@
   {
     "id": 498,
     "word": "against",
-    "pos": "prep./adj.",
+    "pos": "prep.",
     "primaryPos": "prep",
-    "meaning": "逆， 反， 违反；对…不利；倚在， 紧靠着， 紧贴着；和…比， 和…对照"
+    "meaning": "反对；倚靠；与…对抗；与…相比"
   },
   {
     "id": 499,
@@ -3840,7 +3840,7 @@
     "word": "office",
     "pos": "n.",
     "primaryPos": "n",
-    "meaning": "办公室， 办事处， 营业所；处， 所， 局；公职， 官职， 职责；帮忙， 服务"
+    "meaning": "办公室；办事处；职务"
   },
   {
     "id": 550,
@@ -4230,9 +4230,9 @@
   {
     "id": 605,
     "word": "free",
-    "pos": "adj./v./adv./n.",
+    "pos": "adj./v./adv.",
     "primaryPos": "adj",
-    "meaning": "自由的， 无约束的；免费的， 无偿的；空闲的， 未被占用的；无…的， 摆"
+    "meaning": "自由的；免费的；空闲的；释放"
   },
   {
     "id": 606,
@@ -4428,7 +4428,7 @@
     "word": "drop",
     "pos": "v./n.",
     "primaryPos": "v",
-    "meaning": "掉下，落下；〔液体的〕滴"
+    "meaning": "掉下，落下；滴"
   },
   {
     "id": 634,
@@ -4568,7 +4568,7 @@
     "word": "fit",
     "pos": "v./adj./n.",
     "primaryPos": "v",
-    "meaning": "可容纳，装进；〔尤因经常锻炼而〕健壮的，健康的；〔感情的〕冲动，一阵发作；〔疾病〕发作，突发"
+    "meaning": "适合；合身；健康的；发作"
   },
   {
     "id": 654,
@@ -4750,7 +4750,7 @@
     "word": "situation",
     "pos": "n.",
     "primaryPos": "n",
-    "meaning": "形势， 局面， 处境；环境， 状况；位置， 地点， 场所；职位， 职务"
+    "meaning": "情况；形势；处境"
   },
   {
     "id": 680,
@@ -5658,9 +5658,9 @@
   {
     "id": 809,
     "word": "can",
-    "pos": "v./aux./n.",
-    "primaryPos": "v",
-    "meaning": "modal verb. 能，会；〔装食品或饮料的〕金属罐；把…制成罐头"
+    "pos": "aux./n./v.",
+    "primaryPos": "aux",
+    "meaning": "能；会；可以；罐头；把…装罐"
   },
   {
     "id": 810,
@@ -6521,7 +6521,7 @@
     "word": "welcome",
     "pos": "adj./n./v./int.",
     "primaryPos": "adj",
-    "meaning": "迎接，欢迎〔刚到达的人〕；〔某人〕受欢迎的；欢迎，迎接 interjection. 欢迎〔用于对刚刚到达的人表示欢迎〕"
+    "meaning": "受欢迎的；欢迎"
   },
   {
     "id": 933,
@@ -6570,7 +6570,7 @@
     "word": "thing",
     "pos": "n.",
     "primaryPos": "n",
-    "meaning": "事， 事情， 事件；物， 东西；局面， 情况， 事态；所有物， 用品"
+    "meaning": "事情；东西；事物"
   },
   {
     "id": 940,
@@ -6752,7 +6752,7 @@
     "word": "socks",
     "pos": "n.",
     "primaryPos": "n",
-    "meaning": "袜子（sock的复数）"
+    "meaning": "袜子"
   },
   {
     "id": 966,
@@ -6946,9 +6946,9 @@
   {
     "id": 993,
     "word": "hair",
-    "pos": "n./adj.",
+    "pos": "n.",
     "primaryPos": "n",
-    "meaning": "头发；毛发；些微 vt. 除去…的毛发 vi. 生长毛发；形成毛状纤维"
+    "meaning": "头发；毛发"
   },
   {
     "id": 994,
@@ -7011,7 +7011,7 @@
     "word": "may",
     "pos": "aux.",
     "primaryPos": "aux",
-    "meaning": "modal verb. 可能，也许；山楂花"
+    "meaning": "可能；也许；可以"
   },
   {
     "id": 1003,
@@ -7282,9 +7282,9 @@
   {
     "id": 1041,
     "word": "double",
-    "pos": "n./adj./v./adv.",
-    "primaryPos": "n",
-    "meaning": "双的， 双重的；两倍的， 加倍的；供两人用的， 双人的；两面派的， 虚伪的"
+    "pos": "adj./v./n./adv.",
+    "primaryPos": "adj",
+    "meaning": "两倍的；双重的；使加倍；两倍"
   },
   {
     "id": 1042,
@@ -7296,9 +7296,9 @@
   {
     "id": 1043,
     "word": "strong",
-    "pos": "adj./adv./n.",
+    "pos": "adj.",
     "primaryPos": "adj",
-    "meaning": "强壮的， 强有力的， 强大的；牢固的；坚强的， 坚定的；强烈的， 浓的"
+    "meaning": "强壮的；强大的；坚定的；强烈的"
   },
   {
     "id": 1044,
@@ -7674,9 +7674,9 @@
   {
     "id": 1097,
     "word": "to",
-    "pos": "adv./prep./n.",
-    "primaryPos": "adv",
-    "meaning": "向， 往， 对着；对， 给， 于；趋于， 倾向；直到…为止， 在…之前"
+    "pos": "prep./adv.",
+    "primaryPos": "prep",
+    "meaning": "到；向；给"
   },
   {
     "id": 1098,
@@ -7718,7 +7718,7 @@
     "word": "fly",
     "pos": "v./n./adj.",
     "primaryPos": "v",
-    "meaning": "乘飞机；〔棒球中〕击腾空球，击高飞球；蝇，苍蝇；时髦漂亮的"
+    "meaning": "乘飞机；击腾空球，击高飞球；蝇，苍蝇；时髦漂亮的"
   },
   {
     "id": 1104,
@@ -7765,9 +7765,9 @@
   {
     "id": 1110,
     "word": "fantastic",
-    "pos": "adj./n.",
+    "pos": "adj.",
     "primaryPos": "adj",
-    "meaning": "极好的， 极出色的；了不起的；异想天开的， 不实际的；奇异的， 古怪的"
+    "meaning": "极好的；奇异的"
   },
   {
     "id": 1111,
@@ -8556,9 +8556,9 @@
   {
     "id": 1223,
     "word": "service",
-    "pos": "n./adj./v.",
+    "pos": "n./v.",
     "primaryPos": "n",
-    "meaning": "公共设施， 公共事业；公用机构， 服务机构；服务， 劳务；维修， 保养"
+    "meaning": "服务；公共设施；维修"
   },
   {
     "id": 1224,
@@ -8633,9 +8633,9 @@
   {
     "id": 1234,
     "word": "true",
-    "pos": "adj./adv./n./v.",
+    "pos": "adj./adv.",
     "primaryPos": "adj",
-    "meaning": "真实的， 确实的；真正的， 真的；忠诚的， 忠实的；准确的， 精确的"
+    "meaning": "真的；真实的；忠实的；准确的"
   },
   {
     "id": 1235,
@@ -8745,9 +8745,9 @@
   {
     "id": 1250,
     "word": "that",
-    "pos": "pron./adv./conj./adj./n.",
+    "pos": "pron./conj./adv.",
     "primaryPos": "pron",
-    "meaning": "determiner. 那，那个〔指已经提到或已经知道的人、事物、想法等〕 conjunction. 〔用于动词、名词或形容词后引导一个从句，表示某人所说或所想，或陈述一个事实或理由〕；那么〔大、多等〕〔尤指通过手势比画来表示大小、数量等〕"
+    "meaning": "那；那个；那样；引导从句"
   },
   {
     "id": 1251,
@@ -8962,9 +8962,9 @@
   {
     "id": 1281,
     "word": "old",
-    "pos": "adj./n.",
+    "pos": "adj.",
     "primaryPos": "adj",
-    "meaning": "老的， 年老的；古老的， 陈旧的， 过时的；…岁的， …久的；以前的， 过去"
+    "meaning": "老的；旧的；…岁的；过去的"
   },
   {
     "id": 1282,
@@ -9291,9 +9291,9 @@
   {
     "id": 1328,
     "word": "name",
-    "pos": "n./v./adj.",
+    "pos": "n./v.",
     "primaryPos": "n",
-    "meaning": "名字， 名称；名声， 名誉"
+    "meaning": "名字；名称；命名"
   },
   {
     "id": 1329,
@@ -9900,9 +9900,9 @@
   {
     "id": 1415,
     "word": "fine",
-    "pos": "adj./n./v./adv.",
+    "pos": "adj./n./v.",
     "primaryPos": "adj",
-    "meaning": "健康的， 舒适的；极好的， 优秀的；纤细的， 细小的；精制的， 高质量的"
+    "meaning": "好的；健康的；精美的；罚款"
   },
   {
     "id": 1416,
@@ -10420,7 +10420,7 @@
     "word": "pop",
     "pos": "v./n.",
     "primaryPos": "v",
-    "meaning": "突然 地从〔某物〕中出来，蹦出，离开，脱落；流行音乐，流行歌曲"
+    "meaning": "突然 地从中出来，蹦出，离开，脱落；流行音乐，流行歌曲"
   },
   {
     "id": 1490,
@@ -10536,3257 +10536,3467 @@
   },
   {
     "id": 1506,
-    "word": "pro",
-    "pos": "n./adj./prep.",
-    "primaryPos": "n",
-    "meaning": "〔相对于业余爱好者而言的〕专业人士，职业人员〔尤指职业运动员〕；职业性的；专业的；赞成的，支持的"
-  },
-  {
-    "id": 1507,
     "word": "district",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "地区， 区域；管区， 行政区"
   },
   {
-    "id": 1508,
+    "id": 1507,
     "word": "swim",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "游水，游泳；游泳"
   },
   {
-    "id": 1509,
+    "id": 1508,
     "word": "impossible",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "不可能的， 办不到的"
   },
   {
-    "id": 1510,
+    "id": 1509,
     "word": "wave",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "挥手示意；波动， 飘动；高潮， 高涨；波，波浪"
   },
   {
-    "id": 1511,
+    "id": 1510,
     "word": "schoolwork",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "学校作业， 课堂作业；家庭作业"
   },
   {
-    "id": 1512,
+    "id": 1511,
     "word": "furry",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "毛皮的， 盖着毛皮的"
   },
   {
-    "id": 1513,
+    "id": 1512,
     "word": "pain",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "使痛苦；痛，疼痛；痛苦，悲痛"
   },
   {
-    "id": 1514,
+    "id": 1513,
     "word": "center",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "集中于；圆心，正中；中心"
   },
   {
-    "id": 1515,
+    "id": 1514,
     "word": "most",
     "pos": "adv./adj.",
     "primaryPos": "adv",
     "meaning": "最；极其，十分；最多的， 最大的；大多数的， 大部分的"
   },
   {
-    "id": 1516,
+    "id": 1515,
     "word": "teen",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "青少年的；少年男女，青少年"
   },
   {
-    "id": 1517,
+    "id": 1516,
     "word": "lifestyle",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "生活方式"
   },
   {
-    "id": 1518,
+    "id": 1517,
     "word": "program",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "节目单；节目， 表演， 演出；计划， 方案；程序"
   },
   {
-    "id": 1519,
+    "id": 1518,
     "word": "put",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "放， 摆， 使处于；说， 表达；提出， 提交；记下，"
   },
   {
-    "id": 1520,
+    "id": 1519,
     "word": "specifically",
     "pos": "adv.",
     "primaryPos": "adv",
     "meaning": "明确地， 特定地， 具体地"
   },
   {
-    "id": 1521,
+    "id": 1520,
     "word": "hey",
     "pos": "int.",
     "primaryPos": "int",
     "meaning": "嘿"
   },
   {
-    "id": 1522,
+    "id": 1521,
     "word": "gallery",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "画廊， 美术馆；楼座；廊台， 走廊"
   },
   {
-    "id": 1523,
+    "id": 1522,
     "word": "destroy",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "破坏， 毁灭"
   },
   {
-    "id": 1524,
+    "id": 1523,
     "word": "creative",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "创造性的， 具有创造力的"
   },
   {
-    "id": 1525,
+    "id": 1524,
     "word": "artist",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "艺术家， 画家；能手"
   },
   {
-    "id": 1526,
+    "id": 1525,
     "word": "alien",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "外国的；外星的；陌生的；格格不入的"
   },
   {
-    "id": 1527,
+    "id": 1526,
     "word": "theme",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "主题， 题目；【音】主旋律"
   },
   {
-    "id": 1528,
+    "id": 1527,
     "word": "wallet",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "皮夹子"
   },
   {
-    "id": 1529,
+    "id": 1528,
     "word": "tennis",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "网球"
   },
   {
-    "id": 1530,
+    "id": 1529,
     "word": "travel",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "旅行；行进；被传送， 被传播；走过， 驶过"
   },
   {
-    "id": 1531,
+    "id": 1530,
     "word": "fiction",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "小说"
   },
   {
-    "id": 1532,
+    "id": 1531,
     "word": "dad",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "爸爸"
   },
   {
-    "id": 1533,
+    "id": 1532,
     "word": "sixteenth",
     "pos": "num./n.",
     "primaryPos": "num",
     "meaning": "第十六；十六分之一"
   },
   {
-    "id": 1534,
+    "id": 1533,
     "word": "tell",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "讲， 告诉；吩咐， 命令；说明， 显示；分辨， 区分"
   },
   {
-    "id": 1535,
+    "id": 1534,
     "word": "appointment",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "约会；约定；任命， 委派；职务， 职位"
   },
   {
-    "id": 1536,
+    "id": 1535,
     "word": "hit",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "打， 击中；碰撞"
   },
   {
-    "id": 1537,
+    "id": 1536,
     "word": "major",
     "pos": "adj./v./n.",
     "primaryPos": "adj",
     "meaning": "较大的；主要的；主修， 专攻；专业"
   },
   {
-    "id": 1538,
+    "id": 1537,
     "word": "beat",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "打， 击， 敲；打败， 胜过；跳动"
   },
   {
-    "id": 1539,
+    "id": 1538,
     "word": "worldwide",
     "pos": "adv./adj.",
     "primaryPos": "adv",
     "meaning": "在世界各地， 在全世界；世界范围的，全世界的"
   },
   {
-    "id": 1540,
+    "id": 1539,
     "word": "consider",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "考虑， 细想；认为， 把…看作；关心， 照顾"
   },
   {
-    "id": 1541,
+    "id": 1540,
     "word": "particular",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "特定的， 某一的；不寻常的， 特别的， 特有的；讲究的， 挑剔的"
   },
   {
-    "id": 1542,
-    "word": "sock",
-    "pos": "v.",
-    "primaryPos": "v",
-    "meaning": "重击，痛打"
-  },
-  {
-    "id": 1543,
+    "id": 1541,
     "word": "build",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "建筑，建造，盖；造；体格；体形，身材"
   },
   {
-    "id": 1544,
+    "id": 1542,
     "word": "mean",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "表示…的意思；意欲， 打算；意指， 意味着"
   },
   {
-    "id": 1545,
+    "id": 1543,
     "word": "chew",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "咀嚼；咬住， 不停地啃"
   },
   {
-    "id": 1546,
+    "id": 1544,
     "word": "casually",
     "pos": "adv.",
     "primaryPos": "adv",
     "meaning": "偶然地；随便地；临时地"
   },
   {
-    "id": 1547,
+    "id": 1545,
     "word": "modest",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "谦虚的， 谨慎的；适度的"
   },
   {
-    "id": 1548,
+    "id": 1546,
     "word": "shock",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "震动， 冲击；震惊， 惊愕；电震， 电击， 触电"
   },
   {
-    "id": 1549,
+    "id": 1547,
     "word": "opportunity",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "机会， 良机"
   },
   {
-    "id": 1550,
+    "id": 1548,
     "word": "court",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "献殷勤；追求， 求爱；招致， 导致；法庭，法院"
   },
   {
-    "id": 1551,
+    "id": 1549,
     "word": "route",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "路线， 路程"
   },
   {
-    "id": 1552,
+    "id": 1550,
     "word": "adult",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "发育成熟的；成熟的， 成人的；成年人；成年动物"
   },
   {
-    "id": 1553,
+    "id": 1551,
     "word": "relative",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "相对的；比较的；有关的，相关的；亲属， 亲戚"
   },
   {
-    "id": 1554,
+    "id": 1552,
     "word": "attitude",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "态度；看法， 意见"
   },
   {
-    "id": 1555,
+    "id": 1553,
     "word": "spare",
     "pos": "adj./v.",
     "primaryPos": "adj",
     "meaning": "备用的；多余的；空闲的；留出， 抽出"
   },
   {
-    "id": 1556,
+    "id": 1554,
     "word": "chip",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "削下；碎片；芯片"
   },
   {
-    "id": 1557,
+    "id": 1555,
     "word": "staff",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "为…配备人员， 任职于；全体职工，工作人员；杠，棒；参谋部"
   },
   {
-    "id": 1558,
+    "id": 1556,
     "word": "meet",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "遇见， 碰到；接；和…见面， 和…会面"
   },
   {
-    "id": 1559,
+    "id": 1557,
     "word": "stage",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "舞台， 后台；平台， 高台；楼层， 楼架"
   },
   {
-    "id": 1560,
+    "id": 1558,
     "word": "junk",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "丢弃， 废弃；废旧物品，破烂"
   },
   {
-    "id": 1561,
+    "id": 1559,
     "word": "waiter",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "侍者， 服务员"
   },
   {
-    "id": 1562,
+    "id": 1560,
     "word": "spotlight",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "用聚光灯照；特别关注；突出报道；聚光灯"
   },
   {
-    "id": 1563,
+    "id": 1561,
     "word": "represent",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "作为…的代表；描述；表示；象征"
   },
   {
-    "id": 1564,
+    "id": 1562,
     "word": "dig",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "挖（土等），掘（洞）；挖苦，嘲讽"
   },
   {
-    "id": 1565,
+    "id": 1563,
     "word": "hold",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "拿， 握；使保持某种状态"
   },
   {
-    "id": 1566,
+    "id": 1564,
     "word": "later",
     "pos": "adv./adj.",
     "primaryPos": "adv",
     "meaning": "后来；过一会儿；后来的， 以后的， 后面的；新近的"
   },
   {
-    "id": 1567,
-    "word": "lookout",
-    "pos": "n.",
-    "primaryPos": "n",
-    "meaning": "警戒， 监视；■望台， 监视哨；■望员， 监视者；与个人有关的事情， 任务"
-  },
-  {
-    "id": 1568,
+    "id": 1565,
     "word": "possibly",
     "pos": "adv.",
     "primaryPos": "adv",
     "meaning": "大概， 也许"
   },
   {
-    "id": 1569,
+    "id": 1566,
     "word": "take",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "带， 携带；需要， 花费；拿， 取得；接受"
   },
   {
-    "id": 1570,
+    "id": 1567,
     "word": "misleading",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "令人误解的， 导致错误结论的；引入歧途的；欺骗的；迷惑人的"
   },
   {
-    "id": 1571,
+    "id": 1568,
     "word": "blank",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "空白的， 空着的；茫然的， 无表情的"
   },
   {
-    "id": 1572,
+    "id": 1569,
     "word": "importance",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "重要"
   },
   {
-    "id": 1573,
+    "id": 1570,
     "word": "custom",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "习惯，风俗；惯例"
   },
   {
-    "id": 1574,
+    "id": 1571,
     "word": "permission",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "许可， 允许"
   },
   {
-    "id": 1575,
+    "id": 1572,
     "word": "hole",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "洞， 孔眼；漏洞， 缺陷"
   },
   {
-    "id": 1576,
+    "id": 1573,
     "word": "material",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "物质的， 实际的；客观存在的；重要的；材料，原料"
   },
   {
-    "id": 1577,
+    "id": 1574,
     "word": "adverb",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "副词"
   },
   {
-    "id": 1578,
+    "id": 1575,
     "word": "hum",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "哼曲子；发出嗡嗡声；忙碌， 充满活力"
   },
   {
-    "id": 1579,
+    "id": 1576,
     "word": "thirteenth",
     "pos": "num./n.",
     "primaryPos": "num",
     "meaning": "第十三；十三分之一"
   },
   {
-    "id": 1580,
+    "id": 1577,
     "word": "balance",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "使平衡， 使均衡；称；权衡；天平，称"
   },
   {
-    "id": 1581,
+    "id": 1578,
     "word": "cookie",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "饼干"
   },
   {
-    "id": 1582,
+    "id": 1579,
     "word": "belt",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "地带， 地区；腰带， 皮带"
   },
   {
-    "id": 1583,
+    "id": 1580,
     "word": "chop",
     "pos": "v./n.",
     "primaryPos": "v",
-    "meaning": "切，劈，砍；〔羊、猪等〕排骨"
+    "meaning": "切，劈，砍；排骨"
   },
   {
-    "id": 1584,
+    "id": 1581,
     "word": "cream",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "奶油色的；奶油；护肤霜；奶油色"
   },
   {
-    "id": 1585,
+    "id": 1582,
     "word": "baseball",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "棒球"
   },
   {
-    "id": 1586,
+    "id": 1583,
     "word": "upset",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "心烦的， 苦恼的；不适的；心烦的， 苦恼的；不适的"
   },
   {
-    "id": 1587,
+    "id": 1584,
     "word": "thief",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "贼， 小偷"
   },
   {
-    "id": 1588,
+    "id": 1585,
     "word": "embarrassed",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "尴尬的， 为难的；陷入困境的， 窘迫的"
   },
   {
-    "id": 1589,
+    "id": 1586,
     "word": "unpleasant",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "使人不愉快的， 厌恶的；煞风景的；不和的， 不客气的"
   },
   {
-    "id": 1590,
+    "id": 1587,
     "word": "skin",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "皮；兽皮， 毛皮；外皮， 外壳"
   },
   {
-    "id": 1591,
+    "id": 1588,
     "word": "summer",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "夏天， 夏季"
   },
   {
-    "id": 1592,
+    "id": 1589,
     "word": "barbecue",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "在烤架上烧烤；烧烤野餐；金属烤架"
   },
   {
-    "id": 1593,
+    "id": 1590,
     "word": "man",
     "pos": "n./v.",
     "primaryPos": "n",
-    "meaning": "成年男子，男人；在〔某系统、设备等上〕工作；使用，操纵〔某系统、设备等〕 interjection. 喂，嘿，啊呀〔用于强调正在说的话，尤在生气、吃惊、失望等时使用〕"
+    "meaning": "男人；人；给…配备人员；操纵"
   },
   {
-    "id": 1594,
+    "id": 1591,
     "word": "stand",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "站， 站立；坐落， 位于；继续存在， 保持有效；处于特定状态"
   },
   {
-    "id": 1595,
+    "id": 1592,
     "word": "cigarette",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "香烟"
   },
   {
-    "id": 1596,
+    "id": 1593,
     "word": "positive",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "积极的， 正面的；肯定的；【电】正的， 阳性的；确实的， 明确的"
   },
   {
-    "id": 1597,
+    "id": 1594,
     "word": "instance",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "例子， 实例， 事例；情况"
   },
   {
-    "id": 1598,
+    "id": 1595,
     "word": "opera",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "歌剧"
   },
   {
-    "id": 1599,
+    "id": 1596,
     "word": "feel",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "感受到，觉得，体会到；感觉"
   },
   {
-    "id": 1600,
+    "id": 1597,
     "word": "thrill",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "兴奋， 激动；引起激动的事物；震动， 颤抖"
   },
   {
-    "id": 1601,
+    "id": 1598,
     "word": "serve",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "为…服务；任；招待， 接待， 伺候；符合， 适用于， 满足"
   },
   {
-    "id": 1602,
+    "id": 1599,
     "word": "solution",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "解决， 解答， 解决办法；溶液"
   },
   {
-    "id": 1603,
+    "id": 1600,
     "word": "find",
     "pos": "v./n.",
     "primaryPos": "v",
-    "meaning": "发现，找到 〔一直在寻找之物〕；〔尤指通过挖掘或水下打捞找到的〕发现物"
+    "meaning": "找到；发现；发现物"
   },
   {
-    "id": 1604,
+    "id": 1601,
     "word": "host",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "主人；东道主；节目主持人；许多， 大量"
   },
   {
-    "id": 1605,
+    "id": 1602,
     "word": "combine",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "联合，结合；联合企业；联合收割机"
   },
   {
-    "id": 1606,
+    "id": 1603,
     "word": "turtle",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "海龟"
   },
   {
-    "id": 1607,
+    "id": 1604,
     "word": "comedy",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "喜剧， 喜剧性"
   },
   {
-    "id": 1608,
+    "id": 1605,
     "word": "equipment",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "装备， 配备"
   },
   {
-    "id": 1609,
+    "id": 1606,
     "word": "pressure",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "对…施加压力；迫使， 说服；压；压强"
   },
   {
-    "id": 1610,
+    "id": 1607,
     "word": "trash",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "垃圾， 废物；拙劣的文学作品；没用"
   },
   {
-    "id": 1611,
+    "id": 1608,
     "word": "feed",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "喂， 为…提供食物；吃， 以…为"
   },
   {
-    "id": 1612,
+    "id": 1609,
     "word": "forget",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "忘记， 遗忘"
   },
   {
-    "id": 1613,
+    "id": 1610,
     "word": "convenient",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "方便的， 便利的"
   },
   {
-    "id": 1614,
-    "word": "stair",
-    "pos": "n.",
-    "primaryPos": "n",
-    "meaning": "梯级"
-  },
-  {
-    "id": 1615,
+    "id": 1611,
     "word": "belong",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "属于， 应归入"
   },
   {
-    "id": 1616,
+    "id": 1612,
     "word": "best",
     "pos": "adv./adj.",
     "primaryPos": "adv",
     "meaning": "最好， 最；最好的"
   },
   {
-    "id": 1617,
+    "id": 1613,
     "word": "mess",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "凌乱的状态， 脏乱的状态；混乱的局面， 困"
   },
   {
-    "id": 1618,
+    "id": 1614,
     "word": "native",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "出生地的；当地的；土生土长者， 本国人"
   },
   {
-    "id": 1619,
+    "id": 1615,
     "word": "make",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "做， 制造；作出， 制定；使， 迫使；获得， 挣得"
   },
   {
-    "id": 1620,
+    "id": 1616,
     "word": "microwave",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "微波；微波炉"
   },
   {
-    "id": 1621,
+    "id": 1617,
     "word": "structure",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "构造， 建造；结构，构造；建筑物"
   },
   {
-    "id": 1622,
+    "id": 1618,
     "word": "outdoor",
     "pos": "adv./adj.",
     "primaryPos": "adv",
     "meaning": "在户外， 在野外；户外的，野外的"
   },
   {
-    "id": 1623,
+    "id": 1619,
     "word": "online",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "在线的；联机的， 联网的"
   },
   {
-    "id": 1624,
+    "id": 1620,
     "word": "writer",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "作者， 作家"
   },
   {
-    "id": 1625,
+    "id": 1621,
     "word": "fence",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "围住， 隔开；回避， 搪塞；栅栏，篱笆"
   },
   {
-    "id": 1626,
+    "id": 1622,
     "word": "theatre",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "戏院， 剧场；影剧院"
   },
   {
-    "id": 1627,
+    "id": 1623,
     "word": "firm",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "坚实的， 结实的；稳固的；坚定的， 坚决的；公司，商行"
   },
   {
-    "id": 1628,
+    "id": 1624,
     "word": "character",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "性格；特色， 特性；人物， 角色；符号， 字"
   },
   {
-    "id": 1629,
+    "id": 1625,
     "word": "brazilian",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "巴西的；巴西人的；巴西人"
   },
   {
-    "id": 1630,
+    "id": 1626,
     "word": "stick",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "粘，贴；柴枝，枝条"
   },
   {
-    "id": 1631,
+    "id": 1627,
     "word": "band",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "乐队；群， 伙；带， 箍；条纹"
   },
   {
-    "id": 1632,
+    "id": 1628,
     "word": "mall",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "购物中心， 商店区"
   },
   {
-    "id": 1633,
+    "id": 1629,
     "word": "quality",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "优良的， 优质的；质，质量；品德，品质；性质，特性"
   },
   {
-    "id": 1634,
+    "id": 1630,
     "word": "labor",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "劳动；工作"
   },
   {
-    "id": 1635,
+    "id": 1631,
     "word": "rude",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "粗鲁的， 无礼的；粗糙的， 粗陋的；猛烈的"
   },
   {
-    "id": 1636,
+    "id": 1632,
     "word": "association",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "协会， 联盟， 社团；联合， 结合"
   },
   {
-    "id": 1637,
+    "id": 1633,
     "word": "cute",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "漂亮的， 娇小可爱的；聪明的， 伶俐的"
   },
   {
-    "id": 1638,
+    "id": 1634,
     "word": "mix",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "使混合，配制；相混，搞混；混合， 搅和"
   },
   {
-    "id": 1639,
+    "id": 1635,
     "word": "bother",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "打扰，麻烦；使不安，迷惑；麻烦， 焦急；令人烦恼的人"
   },
   {
-    "id": 1640,
+    "id": 1636,
     "word": "star",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "星；星形；明星， 名角"
   },
   {
-    "id": 1641,
+    "id": 1637,
     "word": "wolf",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "狼；残忍贪婪之人"
   },
   {
-    "id": 1642,
+    "id": 1638,
     "word": "many",
     "pos": "pron./adj.",
     "primaryPos": "pron",
     "meaning": "许多人， 许多；许多的，多的"
   },
   {
-    "id": 1643,
+    "id": 1639,
     "word": "transportation",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "运输， 运输系统；运输工具"
   },
   {
-    "id": 1644,
+    "id": 1640,
     "word": "agent",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "代理人， 代理商， 经纪人"
   },
   {
-    "id": 1645,
+    "id": 1641,
     "word": "treat",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "对待，处理；治疗，医治；款待，招待；款待， 招待"
   },
   {
-    "id": 1646,
+    "id": 1642,
     "word": "project",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "投射， 发射；放映；凸出， 伸出；设计， 规划"
   },
   {
-    "id": 1647,
+    "id": 1643,
     "word": "suitcase",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "手提箱， 衣箱"
   },
   {
-    "id": 1648,
+    "id": 1644,
     "word": "beard",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "胡须"
   },
   {
-    "id": 1649,
+    "id": 1645,
     "word": "hunger",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "渴望， 渴望得到；饿，饥饿；食欲，胃口；渴望"
   },
   {
-    "id": 1650,
+    "id": 1646,
     "word": "laboratory",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "实验室， 研究室"
   },
   {
-    "id": 1651,
+    "id": 1647,
     "word": "russia",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "俄国， 俄罗斯"
   },
   {
-    "id": 1652,
+    "id": 1648,
     "word": "twin",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "孪生的， 成双的；孪生儿之一，双胞胎之一"
   },
   {
-    "id": 1653,
+    "id": 1649,
     "word": "comment",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "评论；评论，意见；闲话，议论"
   },
   {
-    "id": 1654,
+    "id": 1650,
     "word": "elevator",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "电梯；升降机"
   },
   {
-    "id": 1655,
+    "id": 1651,
     "word": "lost",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "失去的， 丧失的；错过的；迷惑的"
   },
   {
-    "id": 1656,
+    "id": 1652,
     "word": "calculator",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "计算器"
   },
   {
-    "id": 1657,
+    "id": 1653,
     "word": "biology",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "生物学"
   },
   {
-    "id": 1658,
+    "id": 1654,
     "word": "lose",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "失去， 损失；迷失， 使迷路；输， 输掉；白费， 浪费"
   },
   {
-    "id": 1659,
+    "id": 1655,
     "word": "toward",
     "pos": "prep.",
     "primaryPos": "prep",
     "meaning": "向， 朝， 面对；接近"
   },
   {
-    "id": 1660,
+    "id": 1656,
     "word": "favorite",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "特别喜爱的；特别喜欢的人或事物"
   },
   {
-    "id": 1661,
+    "id": 1657,
     "word": "uniform",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "相同的， 一致的；制服"
   },
   {
-    "id": 1662,
+    "id": 1658,
     "word": "fall",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "落下， 降落；跌倒， 塌倒；降临， 来临；失势， 垮台"
   },
   {
-    "id": 1663,
+    "id": 1659,
     "word": "indoors",
     "pos": "adv.",
     "primaryPos": "adv",
     "meaning": "在屋内， 在室内"
   },
   {
-    "id": 1664,
+    "id": 1660,
     "word": "eat",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "吃， 吃饭"
   },
   {
-    "id": 1665,
+    "id": 1661,
     "word": "opinion",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "意见， 主张"
   },
   {
-    "id": 1666,
+    "id": 1662,
     "word": "comma",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "逗号"
   },
   {
-    "id": 1667,
+    "id": 1663,
     "word": "prefer",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "更喜欢， 宁愿"
   },
   {
-    "id": 1668,
+    "id": 1664,
     "word": "theater",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "戏院， 剧场；影剧院"
   },
   {
-    "id": 1669,
+    "id": 1665,
     "word": "from",
     "pos": "prep.",
     "primaryPos": "prep",
     "meaning": "从…来， 出自；离；去除， 免掉；从， 据"
   },
   {
-    "id": 1670,
+    "id": 1666,
     "word": "spell",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "咒语， 符咒；魅力；连续的一段时间"
   },
   {
-    "id": 1671,
+    "id": 1667,
     "word": "much",
     "pos": "adv./pron.",
     "primaryPos": "adv",
     "meaning": "十分，非常；许多， 大量"
   },
   {
-    "id": 1672,
+    "id": 1668,
     "word": "mouse",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "鼠；胆小的人；鼠标"
   },
   {
-    "id": 1673,
+    "id": 1669,
     "word": "steal",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "偷盗， 行窃；悄悄地移动"
   },
   {
-    "id": 1674,
+    "id": 1670,
     "word": "scientific",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "科学的， 科学上的"
   },
   {
-    "id": 1675,
+    "id": 1671,
     "word": "terrorist",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "恐怖主义者"
   },
   {
-    "id": 1676,
+    "id": 1672,
     "word": "attendant",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "伴随的， 随之而产生的；服务人员，侍者；随从"
   },
   {
-    "id": 1677,
+    "id": 1673,
     "word": "spend",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "花费， 用；花；度过， 消磨；消耗， 用尽"
   },
   {
-    "id": 1678,
+    "id": 1674,
     "word": "x-ray",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "X射线的， X光的"
   },
   {
-    "id": 1679,
+    "id": 1675,
     "word": "advantage",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "优点， 好处， 优势"
   },
   {
-    "id": 1680,
+    "id": 1676,
     "word": "assistant",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "助理的， 辅助的；助手；助教"
   },
   {
-    "id": 1681,
+    "id": 1677,
     "word": "dessert",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "甜食， 甜点"
   },
   {
-    "id": 1682,
+    "id": 1678,
     "word": "carrot",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "胡萝卜"
   },
   {
-    "id": 1683,
+    "id": 1679,
     "word": "bicycle",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "骑自行车；自行车"
   },
   {
-    "id": 1684,
+    "id": 1680,
     "word": "kangaroo",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "袋鼠"
   },
   {
-    "id": 1685,
+    "id": 1681,
     "word": "awful",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "极坏的；糟糕的， 令人不快的；可怕的；非常的"
   },
   {
-    "id": 1686,
+    "id": 1682,
     "word": "yeah",
     "pos": "adv.",
     "primaryPos": "adv",
     "meaning": "是"
   },
   {
-    "id": 1687,
+    "id": 1683,
     "word": "resolution",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "正式决定， 决议；坚决， 决心；解决， 解答；分辨率， 清晰度"
   },
   {
-    "id": 1688,
+    "id": 1684,
     "word": "july",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "七月"
   },
   {
-    "id": 1689,
+    "id": 1685,
     "word": "educate",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "教育；培养， 训练"
   },
   {
-    "id": 1690,
+    "id": 1686,
     "word": "lighting",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "照明；照明设备；光线"
   },
   {
-    "id": 1691,
+    "id": 1687,
     "word": "exam",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "考试；试题；检查， 调查"
   },
   {
-    "id": 1692,
+    "id": 1688,
     "word": "poster",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "招贴， 海报， 广告"
   },
   {
-    "id": 1693,
+    "id": 1689,
     "word": "throat",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "咽喉， 嗓子"
   },
   {
-    "id": 1694,
+    "id": 1690,
     "word": "symphony",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "交响乐， 交响曲；和谐， 协调"
   },
   {
-    "id": 1695,
+    "id": 1691,
     "word": "french",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "法国人"
   },
   {
-    "id": 1696,
+    "id": 1692,
     "word": "vocabulary",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "词汇；词汇量；词汇表"
   },
   {
-    "id": 1697,
+    "id": 1693,
     "word": "retire",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "退休， 退役；退下， 退出；退却， 撤退；就寝"
   },
   {
-    "id": 1698,
+    "id": 1694,
     "word": "aggressive",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "侵犯的， 侵略的， 挑衅的；敢作敢为的， 有进取心的"
   },
   {
-    "id": 1699,
+    "id": 1695,
     "word": "sweep",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "扫， 打扫， 拂；扫过， 掠过，"
   },
   {
-    "id": 1700,
+    "id": 1696,
     "word": "unfriendly",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "不友好的， 冷漠的"
   },
   {
-    "id": 1701,
+    "id": 1697,
     "word": "fourteenth",
     "pos": "num./n.",
     "primaryPos": "num",
     "meaning": "第十四；十四分之一"
   },
   {
-    "id": 1702,
+    "id": 1698,
     "word": "photo",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "照片"
   },
   {
-    "id": 1703,
+    "id": 1699,
     "word": "thirtieth",
     "pos": "num./n.",
     "primaryPos": "num",
     "meaning": "第三十；三十分之一"
   },
   {
-    "id": 1704,
+    "id": 1700,
     "word": "rural",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "乡村的， 农村的"
   },
   {
-    "id": 1705,
+    "id": 1701,
     "word": "leave",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "离开， 出发；留下， 遗留；遗忘；听任， 让"
   },
   {
-    "id": 1706,
+    "id": 1702,
     "word": "seventeenth",
     "pos": "num./n.",
     "primaryPos": "num",
     "meaning": "第十七；十七分之一"
   },
   {
-    "id": 1707,
+    "id": 1703,
     "word": "shelf",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "架子， 搁板"
   },
   {
-    "id": 1708,
+    "id": 1704,
     "word": "shell",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "剥…的壳；炮击；壳，贝壳；外壳，框架"
   },
   {
-    "id": 1709,
+    "id": 1705,
     "word": "therefore",
     "pos": "adv.",
     "primaryPos": "adv",
     "meaning": "因此， 所以"
   },
   {
-    "id": 1710,
+    "id": 1706,
     "word": "exchange",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "调换，；交换，互换；交易所；兑换，兑换率"
   },
   {
-    "id": 1711,
+    "id": 1707,
     "word": "bored",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "无聊的， 无趣的；厌烦的"
   },
   {
-    "id": 1712,
+    "id": 1708,
     "word": "choose",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "选择， 挑选"
   },
   {
-    "id": 1713,
+    "id": 1709,
     "word": "ride",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "骑；乘"
   },
   {
-    "id": 1714,
+    "id": 1710,
     "word": "behave",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "表现；表现得体， 有礼貌；运转；起作用"
   },
   {
-    "id": 1715,
+    "id": 1711,
     "word": "medal",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "奖牌， 奖章"
   },
   {
-    "id": 1716,
+    "id": 1712,
     "word": "mistake",
     "pos": "n./v.",
     "primaryPos": "n",
-    "meaning": "〔行为、看法、言辞等上的〕错误；弄错，误解，误会"
+    "meaning": "错误；弄错，误解，误会"
   },
   {
-    "id": 1717,
+    "id": 1713,
     "word": "pour",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "灌， 倒；倾泻， 流出"
   },
   {
-    "id": 1718,
+    "id": 1714,
     "word": "popcorn",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "爆米花"
   },
   {
-    "id": 1719,
+    "id": 1715,
     "word": "spot",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "地点， 处所；斑点， 污点；少量"
   },
   {
-    "id": 1720,
+    "id": 1716,
     "word": "silver",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "镀银；银；银器；银币"
   },
   {
-    "id": 1721,
+    "id": 1717,
     "word": "aid",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "帮助， 救助；帮助，救助；助手；辅助手段"
   },
   {
-    "id": 1722,
+    "id": 1718,
     "word": "singer",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "歌手"
   },
   {
-    "id": 1723,
+    "id": 1719,
     "word": "aim",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "瞄准， 对准；目的是， 旨在；针对；力争做到"
   },
   {
-    "id": 1724,
+    "id": 1720,
     "word": "confident",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "确信的， 肯定的；有信心的， 自信的"
   },
   {
-    "id": 1725,
+    "id": 1721,
     "word": "local",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "地方性的，本地的；局部的；狭隘的；当地人， 本地人"
   },
   {
-    "id": 1726,
+    "id": 1722,
     "word": "speak",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "说话， 讲话；演说， 发言；表达意见；说， 讲"
   },
   {
-    "id": 1727,
+    "id": 1723,
     "word": "restroom",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "洗手间；休息室"
   },
   {
-    "id": 1728,
+    "id": 1724,
     "word": "polar",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "地极的， 近地极的；磁极的；正好相反的， 截然对立的"
   },
   {
-    "id": 1729,
+    "id": 1725,
     "word": "shark",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "鲨鱼；勒索者， 诈骗者；放高利贷的人"
   },
   {
-    "id": 1730,
+    "id": 1726,
     "word": "more",
     "pos": "adv./adj.",
     "primaryPos": "adv",
     "meaning": "更，更多；更多的；更大的"
   },
   {
-    "id": 1731,
+    "id": 1727,
     "word": "honor",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "尊敬；尊敬，敬意；荣誉，光荣"
   },
   {
-    "id": 1732,
+    "id": 1728,
     "word": "cage",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "笼子"
   },
   {
-    "id": 1733,
+    "id": 1729,
     "word": "unhealthy",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "不健康的"
   },
   {
-    "id": 1734,
+    "id": 1730,
     "word": "insect",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "昆虫， 虫"
   },
   {
-    "id": 1735,
+    "id": 1731,
     "word": "net",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "净的， 纯的；网；网状系统"
   },
   {
-    "id": 1736,
+    "id": 1732,
     "word": "border",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "给…加上边， 围；邻接， 毗连；近似， 接近；边，边缘"
   },
   {
-    "id": 1737,
+    "id": 1733,
     "word": "read",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "读， 阅读；朗读， 宣读；读懂；观"
   },
   {
-    "id": 1738,
+    "id": 1734,
     "word": "nearby",
     "pos": "adv./adj.",
     "primaryPos": "adv",
     "meaning": "在附近；附近的"
   },
   {
-    "id": 1739,
+    "id": 1735,
     "word": "pronoun",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "代词"
   },
   {
-    "id": 1740,
+    "id": 1736,
     "word": "talented",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "有才能的， 有才干的；天才的"
   },
   {
-    "id": 1741,
+    "id": 1737,
     "word": "predict",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "预言， 预测"
   },
   {
-    "id": 1742,
+    "id": 1738,
     "word": "saying",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "话， 言语；俗话；成语， 格言， 谚语；口头禅"
   },
   {
-    "id": 1743,
+    "id": 1739,
     "word": "france",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "法国"
   },
   {
-    "id": 1744,
+    "id": 1740,
     "word": "specific",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "特定的，特有的；明确的，具体的"
   },
   {
-    "id": 1745,
+    "id": 1741,
     "word": "super",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "极好的， 上等的；超级的；过分的"
   },
   {
-    "id": 1746,
+    "id": 1742,
     "word": "chore",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "家庭杂务；困难的工作；令人厌烦的工作"
   },
   {
-    "id": 1747,
+    "id": 1743,
     "word": "semester",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "学期"
   },
   {
-    "id": 1748,
+    "id": 1744,
     "word": "strategy",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "谋略， 战略， 策略"
   },
   {
-    "id": 1749,
+    "id": 1745,
     "word": "dull",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "乏味的， 单调的；晦暗的；愚钝的， 笨的；钝的"
   },
   {
-    "id": 1750,
+    "id": 1746,
     "word": "reason",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "推断， 分析；推论， 推理；理喻， 劝告；原因，理由"
   },
   {
-    "id": 1751,
+    "id": 1747,
     "word": "ring",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "戒指；环， 圆圈；铃声；电话"
   },
   {
-    "id": 1752,
+    "id": 1748,
     "word": "legend",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "传说；传奇人物"
   },
   {
-    "id": 1753,
+    "id": 1749,
     "word": "professional",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "职业的；专业的；专业人员；自由职业者"
   },
   {
-    "id": 1754,
+    "id": 1750,
     "word": "nineteenth",
     "pos": "num./n.",
     "primaryPos": "num",
     "meaning": "第十九；十九分之一"
   },
   {
-    "id": 1755,
+    "id": 1751,
     "word": "neighbor",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "邻居；邻国"
   },
   {
-    "id": 1756,
+    "id": 1752,
     "word": "gentle",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "温柔的， 慈祥的；文雅的， 有礼貌的；温和的， 暖和的"
   },
   {
-    "id": 1757,
+    "id": 1753,
     "word": "boil",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "沸腾，煮沸；沸腾"
   },
   {
-    "id": 1758,
+    "id": 1754,
     "word": "envelope",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "信封"
   },
   {
-    "id": 1759,
+    "id": 1755,
     "word": "turkey",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "火鸡；土耳其"
   },
   {
-    "id": 1760,
+    "id": 1756,
     "word": "tasty",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "美味的；引起食欲的；好吃的东西；吸引人的东西"
   },
   {
-    "id": 1761,
+    "id": 1757,
     "word": "helicopter",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "直升机"
   },
   {
-    "id": 1762,
+    "id": 1758,
     "word": "are",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "存在， 是"
   },
   {
-    "id": 1763,
+    "id": 1759,
     "word": "disabled",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "有残疾的"
   },
   {
-    "id": 1764,
+    "id": 1760,
     "word": "mom",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "妈妈"
   },
   {
-    "id": 1765,
+    "id": 1761,
     "word": "calm",
     "pos": "adj./v.",
     "primaryPos": "adj",
     "meaning": "镇静的，镇定的；平静的，无风的；平静；镇静"
   },
   {
-    "id": 1766,
+    "id": 1762,
     "word": "jazz",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "爵士乐的；爵士乐"
   },
   {
-    "id": 1767,
+    "id": 1763,
     "word": "run",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "跑， 奔跑；行驶， 驾驶；蔓延， 伸展；操作"
   },
   {
-    "id": 1768,
+    "id": 1764,
     "word": "view",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "考虑， 认为；观察， 看；看法，观点；视野，眼界"
   },
   {
-    "id": 1769,
+    "id": 1765,
     "word": "furniture",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "家具"
   },
   {
-    "id": 1770,
+    "id": 1766,
     "word": "donate",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "捐赠， 赠送"
   },
   {
-    "id": 1771,
+    "id": 1767,
     "word": "might",
-    "pos": "n.",
-    "primaryPos": "n",
-    "meaning": "modal verb. 可以〔用于礼貌地提出建议〕；力量；威力；权力"
+    "pos": "aux./n.",
+    "primaryPos": "aux",
+    "meaning": "可能；也许；力量；威力"
   },
   {
-    "id": 1772,
+    "id": 1768,
     "word": "worse",
     "pos": "adj./n./adv.",
     "primaryPos": "adj",
     "meaning": "更坏的；更糟的；更差的；更差 的事物"
   },
   {
-    "id": 1773,
+    "id": 1769,
     "word": "volunteer",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "自愿；志愿者，志愿兵"
   },
   {
-    "id": 1774,
+    "id": 1770,
     "word": "clothing",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "服装， 衣着"
   },
   {
-    "id": 1775,
+    "id": 1771,
     "word": "string",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "弦， 线， 细绳；一串， 一行"
   },
   {
-    "id": 1776,
+    "id": 1772,
     "word": "distance",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "距离， 间距；遥远， 远方；冷淡， 疏远；久远"
   },
   {
-    "id": 1777,
+    "id": 1773,
     "word": "color",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "颜色；颜料；肤色 vt. 给…着色"
   },
   {
-    "id": 1778,
+    "id": 1774,
     "word": "mars",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "火星；战神"
   },
   {
-    "id": 1779,
+    "id": 1775,
     "word": "statement",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "陈述， 声明；结算单， 报表"
   },
   {
-    "id": 1780,
+    "id": 1776,
     "word": "rise",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "升起， 上升；起立；起床；上涨， 增加"
   },
   {
-    "id": 1781,
+    "id": 1777,
     "word": "penny",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "便士， 分"
   },
   {
-    "id": 1782,
+    "id": 1778,
     "word": "rent",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "租借，租用；出租，出借；租金；出租"
   },
   {
-    "id": 1783,
+    "id": 1779,
     "word": "anxious",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "焦虑的， 发愁的， 令人焦急的；渴望的， 急"
   },
   {
-    "id": 1784,
+    "id": 1780,
     "word": "slice",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "切成片，削；薄片， 切片；一份， 部分"
   },
   {
-    "id": 1785,
+    "id": 1781,
     "word": "far",
     "pos": "adv./adj.",
     "primaryPos": "adv",
     "meaning": "远；久远；很大程度上，极；远的， 远方的"
   },
   {
-    "id": 1786,
+    "id": 1782,
     "word": "catch",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "抓住， 接住；偶然撞见；染上， 感染；赶上， 追上"
   },
   {
-    "id": 1787,
+    "id": 1783,
     "word": "fax",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "传真；传真；传真电文"
   },
   {
-    "id": 1788,
+    "id": 1784,
     "word": "case",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "事例， 实例；情况， 事实；病例；案件"
   },
   {
-    "id": 1789,
+    "id": 1785,
     "word": "give",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "给予， 赠送；供给， 提供；做出， 发出"
   },
   {
-    "id": 1790,
+    "id": 1786,
     "word": "phone",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "打电话；电话，电话机"
   },
   {
-    "id": 1791,
+    "id": 1787,
     "word": "slide",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "（使）滑行，（使）滑动；滑梯"
   },
   {
-    "id": 1792,
+    "id": 1788,
     "word": "style",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "风格， 文体；式样， 类型；流行式样， 时尚"
   },
   {
-    "id": 1793,
+    "id": 1789,
     "word": "jungle",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "丛林， 密林"
   },
   {
-    "id": 1794,
+    "id": 1790,
     "word": "suit",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "一套衣服；套"
   },
   {
-    "id": 1795,
+    "id": 1791,
     "word": "yin",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "阴"
   },
   {
-    "id": 1796,
+    "id": 1792,
     "word": "stress",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "强调， 着重；重读；压力，紧张；强调，重要性"
   },
   {
-    "id": 1797,
+    "id": 1793,
     "word": "porridge",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "粥， 麦片粥"
   },
   {
-    "id": 1798,
+    "id": 1794,
     "word": "criticize",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "批评；评论；非难"
   },
   {
-    "id": 1799,
+    "id": 1795,
     "word": "shut",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "关闭， 关上；打烊"
   },
   {
-    "id": 1800,
+    "id": 1796,
     "word": "autograph",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "签名；亲笔签名"
   },
   {
-    "id": 1801,
+    "id": 1797,
     "word": "eleventh",
     "pos": "num.",
     "primaryPos": "num",
     "meaning": "第十一"
   },
   {
-    "id": 1802,
+    "id": 1798,
     "word": "talent",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "天资， 才能；人才"
   },
   {
-    "id": 1803,
+    "id": 1799,
     "word": "keen",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "热心的；激烈的；敏锐的"
   },
   {
-    "id": 1804,
+    "id": 1800,
     "word": "phrase",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "用语言表达， 叙述；短语，词组，用语"
   },
   {
-    "id": 1805,
+    "id": 1801,
     "word": "keep",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "使保持， 使继续；阻止， 防止；履行， 遵守；保存， 保"
   },
   {
-    "id": 1806,
+    "id": 1802,
     "word": "yoghurt",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "酸奶， 酵母乳"
   },
   {
-    "id": 1807,
+    "id": 1803,
     "word": "elementary",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "基本的， 基础的；初级的， 小学的"
   },
   {
-    "id": 1808,
+    "id": 1804,
     "word": "topic",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "题目， 话题；主题"
   },
   {
-    "id": 1809,
+    "id": 1805,
     "word": "forbid",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "不许， 禁止；妨碍， 阻止"
   },
   {
-    "id": 1810,
+    "id": 1806,
     "word": "diet",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "进特种饮食， 节食；日常饮食；特种饮食，规定饮食"
   },
   {
-    "id": 1811,
+    "id": 1807,
     "word": "win",
     "pos": "v./n.",
     "primaryPos": "v",
-    "meaning": "〔在竞赛、游戏、选举等中〕获胜，赢；〔尤指在体育比赛中的〕胜利，赢"
+    "meaning": "获胜，赢；胜利，赢"
   },
   {
-    "id": 1812,
+    "id": 1808,
     "word": "sheep",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "羊，绵羊"
   },
   {
-    "id": 1813,
+    "id": 1809,
     "word": "soccer",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "足球"
   },
   {
-    "id": 1814,
+    "id": 1810,
     "word": "amount",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "合计；总额"
   },
   {
-    "id": 1815,
+    "id": 1811,
     "word": "original",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "最初的，原始的；新颖的，有创意的；原创性的；原件"
   },
   {
-    "id": 1816,
+    "id": 1812,
     "word": "album",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "粘贴簿；集邮簿；相册；音乐专辑"
   },
   {
-    "id": 1817,
+    "id": 1813,
     "word": "say",
     "pos": "v./n.",
     "primaryPos": "v",
-    "meaning": "说；决定权；发言权 interjection. 哎，我说〔用于表示惊讶或引起别人注意〕"
+    "meaning": "说；讲；表明；发言权"
   },
   {
-    "id": 1818,
+    "id": 1814,
     "word": "shine",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "照耀；发光，发亮；干得出色；光泽， 光"
   },
   {
-    "id": 1819,
+    "id": 1815,
     "word": "spread",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "展开，伸开；散布，蔓延；涂，敷；传播， 蔓延"
   },
   {
-    "id": 1820,
+    "id": 1816,
     "word": "shiny",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "光亮的， 有光泽的；反光的"
   },
   {
-    "id": 1821,
+    "id": 1817,
     "word": "headache",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "头痛；令人头痛的人"
   },
   {
-    "id": 1822,
+    "id": 1818,
     "word": "bad",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "坏的；不利的；差的， 有缺陷的；邪恶的， 道德败坏的"
   },
   {
-    "id": 1823,
+    "id": 1819,
     "word": "bring",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "带来， 拿来；把…引来；促使， 使发生"
   },
   {
-    "id": 1824,
+    "id": 1820,
     "word": "sauce",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "沙司；调味汁， 酱汁；佐料"
   },
   {
-    "id": 1825,
+    "id": 1821,
     "word": "awake",
     "pos": "adj./v.",
     "primaryPos": "adj",
     "meaning": "醒着的；醒， 唤醒；意识到， 醒悟"
   },
   {
-    "id": 1826,
+    "id": 1822,
     "word": "rank",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "排列， 使排成行；将…分等级；属于某等级， 居某地位；等级"
   },
   {
-    "id": 1827,
+    "id": 1823,
     "word": "surf",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "冲浪；冲浪， 浏览；拍岸浪花；拍岸涛声"
   },
   {
-    "id": 1828,
+    "id": 1824,
     "word": "am",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "是"
   },
   {
-    "id": 1829,
+    "id": 1825,
     "word": "fold",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "折叠， 合拢；褶痕，褶缝"
   },
   {
-    "id": 1830,
+    "id": 1826,
     "word": "mysterious",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "神秘的， 难以理解的"
   },
   {
-    "id": 1831,
+    "id": 1827,
     "word": "drive",
     "pos": "v./n.",
     "primaryPos": "v",
-    "meaning": "驱赶，驱使，迫使…去〔某处〕；驱车出行"
+    "meaning": "驱赶，驱使，迫使…去；驱车出行"
   },
   {
-    "id": 1832,
+    "id": 1828,
     "word": "hurt",
     "pos": "v./adj./n.",
     "primaryPos": "v",
-    "meaning": "弄伤；痛的；受伤的；〔对感情造成的〕伤害，痛苦"
+    "meaning": "弄伤；痛的；受伤的；伤害，痛苦"
   },
   {
-    "id": 1833,
+    "id": 1829,
     "word": "homeland",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "祖国， 家乡"
   },
   {
-    "id": 1834,
+    "id": 1830,
     "word": "maths",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "数学"
   },
   {
-    "id": 1835,
+    "id": 1831,
     "word": "see",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "看， 观看；参见， 会晤；领会， 理解；想象"
   },
   {
-    "id": 1836,
+    "id": 1832,
     "word": "fool",
     "pos": "v./adj./n.",
     "primaryPos": "v",
     "meaning": "欺骗，愚弄；干蠢事；愚蠢的；蠢人，笨蛋"
   },
   {
-    "id": 1837,
+    "id": 1833,
     "word": "popularity",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "普及；流行"
   },
   {
-    "id": 1838,
+    "id": 1834,
     "word": "tooth",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "牙，牙齿"
   },
   {
-    "id": 1839,
+    "id": 1835,
     "word": "foot",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "脚，足"
   },
   {
-    "id": 1840,
+    "id": 1836,
     "word": "set",
     "pos": "v./n./adj.",
     "primaryPos": "v",
-    "meaning": "〔小心地〕放置，放下；〔物品的〕一套，一副，一组；在…位置的，位于…的"
+    "meaning": "放置；设置；一套；固定的"
   },
   {
-    "id": 1841,
+    "id": 1837,
     "word": "outstanding",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "杰出的；明显的；未解决的；未偿付的"
   },
   {
-    "id": 1842,
+    "id": 1838,
     "word": "escalator",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "〈美〉自动扶梯"
   },
   {
-    "id": 1843,
+    "id": 1839,
     "word": "partner",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "做…的搭档；配偶，搭档；伙伴，合伙人"
   },
   {
-    "id": 1844,
+    "id": 1840,
     "word": "spider",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "蜘蛛"
   },
   {
-    "id": 1845,
+    "id": 1841,
     "word": "beauty",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "美， 美丽；美人；美的东西"
   },
   {
-    "id": 1846,
+    "id": 1842,
     "word": "do",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "做， 从事；实行， 进行；尽力；可用"
   },
   {
-    "id": 1847,
+    "id": 1843,
     "word": "humorous",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "幽默的， 诙谐的"
   },
   {
-    "id": 1848,
+    "id": 1844,
     "word": "scary",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "恐怖的， 吓人的"
   },
   {
-    "id": 1849,
+    "id": 1845,
     "word": "disadvantage",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "缺点， 不利条件"
   },
   {
-    "id": 1850,
+    "id": 1846,
     "word": "complain",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "抱怨， 诉苦；投诉， 控告"
   },
   {
-    "id": 1851,
+    "id": 1847,
     "word": "knife",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "刀， 餐刀"
   },
   {
-    "id": 1852,
+    "id": 1848,
     "word": "refrigerator",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "电冰箱"
   },
   {
-    "id": 1853,
+    "id": 1849,
     "word": "little",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "小的， 矮小的；短的；琐碎的， 微不足道的；不多的， 少到"
   },
   {
-    "id": 1854,
+    "id": 1850,
     "word": "oak",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "橡树；橡木"
   },
   {
-    "id": 1855,
+    "id": 1851,
     "word": "sit",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "坐， 就座；坐落， 被安放；使坐， 使就座"
   },
   {
-    "id": 1856,
+    "id": 1852,
     "word": "crowd",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "聚集， 群集；挤， 推；人群，群众；一群，一批"
   },
   {
-    "id": 1857,
+    "id": 1853,
     "word": "easily",
     "pos": "adv.",
     "primaryPos": "adv",
     "meaning": "容易地， 不费力地"
   },
   {
-    "id": 1858,
+    "id": 1854,
     "word": "costume",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "戏装；成套服装"
   },
   {
-    "id": 1859,
+    "id": 1855,
     "word": "hallway",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "走廊， 回廊；门厅， 过道"
   },
   {
-    "id": 1860,
+    "id": 1856,
     "word": "verb",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "动词"
   },
   {
-    "id": 1861,
+    "id": 1857,
     "word": "is",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "存在， 是"
   },
   {
-    "id": 1862,
+    "id": 1858,
     "word": "fry",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "油煎， 油炸"
   },
   {
-    "id": 1863,
+    "id": 1859,
     "word": "drink",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "喝，饮；一杯 饮料；饮，喝"
   },
   {
-    "id": 1864,
+    "id": 1860,
     "word": "announce",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "宣布， 声称；预告"
   },
   {
-    "id": 1865,
+    "id": 1861,
     "word": "operate",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "动手术；起作用；经营， 管理"
   },
   {
-    "id": 1866,
+    "id": 1862,
     "word": "hello",
     "pos": "int.",
     "primaryPos": "int",
     "meaning": "喂， 你好"
   },
   {
-    "id": 1867,
+    "id": 1863,
     "word": "begin",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "开始"
   },
   {
-    "id": 1868,
+    "id": 1864,
     "word": "parrot",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "鹦鹉"
   },
   {
-    "id": 1869,
+    "id": 1865,
     "word": "become",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "变成， 成为；开始变得"
   },
   {
-    "id": 1870,
+    "id": 1866,
     "word": "break",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "打破；损坏， 弄坏；破坏， 违反；中止， 中断"
   },
   {
-    "id": 1871,
+    "id": 1867,
     "word": "draw",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "画， 描绘；拖， 拉；拔出， 抽出；提取， 汲取"
   },
   {
-    "id": 1872,
+    "id": 1868,
     "word": "cupboard",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "柜橱"
   },
   {
-    "id": 1873,
+    "id": 1869,
     "word": "hide",
     "pos": "v./n.",
     "primaryPos": "v",
-    "meaning": "把…藏起来，隐藏；〔可观察鸟兽行动的〕隐匿处，埋伏处"
+    "meaning": "把…藏起来，隐藏；隐匿处，埋伏处"
   },
   {
-    "id": 1874,
+    "id": 1870,
     "word": "sign",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "签；签署；标志，符号；招牌"
   },
   {
-    "id": 1875,
+    "id": 1871,
     "word": "author",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "作家， 作者；创始人， 发起者"
   },
   {
-    "id": 1876,
+    "id": 1872,
     "word": "meter",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "米， 公尺"
   },
   {
-    "id": 1877,
+    "id": 1873,
     "word": "infinitive",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "原形；不定式"
   },
   {
-    "id": 1878,
+    "id": 1874,
     "word": "establish",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "建立， 设立；确定， 证实"
   },
   {
-    "id": 1879,
+    "id": 1875,
     "word": "dream",
     "pos": "n./v.",
     "primaryPos": "n",
     "meaning": "梦；梦想，希望"
   },
   {
-    "id": 1880,
+    "id": 1876,
     "word": "essay",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "短文， 文章；随笔， 散文"
   },
   {
-    "id": 1881,
+    "id": 1877,
     "word": "prediction",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "预言；预料；预报"
   },
   {
-    "id": 1882,
+    "id": 1878,
     "word": "survey",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "调查， 检视；测量， 勘测；全面审视， 概括论述；俯瞰， 眺望"
   },
   {
-    "id": 1883,
+    "id": 1879,
     "word": "tense",
     "pos": "adj./v./n.",
     "primaryPos": "adj",
     "meaning": "紧张的；拉紧的，绷紧的；拉紧，绷紧；时态"
   },
   {
-    "id": 1884,
+    "id": 1880,
     "word": "recipe",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "烹饪法， 食谱；方法；秘诀， 诀窍"
   },
   {
-    "id": 1885,
+    "id": 1881,
     "word": "seal",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "封， 密封；封铅，封条；印，图章；海豹"
   },
   {
-    "id": 1886,
+    "id": 1882,
     "word": "fight",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "打（仗），与（…）作战，战斗；打斗，打架"
   },
   {
-    "id": 1887,
+    "id": 1883,
     "word": "hear",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "听见；听到， 得知；审讯， 听证；收到…的信"
   },
   {
-    "id": 1888,
+    "id": 1884,
     "word": "homeless",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "无家的， 无家可归的"
   },
   {
-    "id": 1889,
+    "id": 1885,
     "word": "clerk",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "〈美〉店员；办事员， 职员"
   },
   {
-    "id": 1890,
+    "id": 1886,
     "word": "paris",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "巴黎"
   },
   {
-    "id": 1891,
+    "id": 1887,
     "word": "elbow",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "用肘推， 用肘挤；肘部"
   },
   {
-    "id": 1892,
+    "id": 1888,
     "word": "rocket",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "迅速上升；猛涨；火箭"
   },
   {
-    "id": 1893,
+    "id": 1889,
     "word": "scene",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "一场， 一个镜头， 一节；(戏剧、 事件"
   },
   {
-    "id": 1894,
+    "id": 1890,
     "word": "injure",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "伤害， 损害， 损伤"
   },
   {
-    "id": 1895,
+    "id": 1891,
     "word": "freeze",
     "pos": "v./n.",
     "primaryPos": "v",
-    "meaning": "（使）结冰，（使）冻结；〔价格、工资等的〕冻结"
+    "meaning": "（使）结冰，（使）冻结；冻结"
   },
   {
-    "id": 1896,
+    "id": 1892,
     "word": "province",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "省；领域；范围"
   },
   {
-    "id": 1897,
+    "id": 1893,
     "word": "bookcase",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "书柜， 书架"
   },
   {
-    "id": 1898,
+    "id": 1894,
     "word": "zigzag",
     "pos": "adj./v./n.",
     "primaryPos": "adj",
     "meaning": "“之”字形的；弯弯曲曲行进；“之”字形；蜿蜒曲折"
   },
   {
-    "id": 1899,
+    "id": 1895,
     "word": "underwater",
     "pos": "adv./adj.",
     "primaryPos": "adv",
     "meaning": "在水下， 在水中；水下的；水下使用的；水下行动的"
   },
   {
-    "id": 1900,
+    "id": 1896,
     "word": "singular",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "单数的；单一的"
   },
   {
-    "id": 1901,
+    "id": 1897,
     "word": "dormitory",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "宿舍"
   },
   {
-    "id": 1902,
+    "id": 1898,
     "word": "seek",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "寻找， 追求；征求， 请求；试图， 设法；探索"
   },
   {
-    "id": 1903,
+    "id": 1899,
     "word": "eighteenth",
     "pos": "num.",
     "primaryPos": "num",
     "meaning": "第十八"
   },
   {
-    "id": 1904,
+    "id": 1900,
     "word": "heel",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "脚后跟， 踵；后跟"
   },
   {
-    "id": 1905,
+    "id": 1901,
     "word": "pierce",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "刺穿， 刺破， 穿透；穿孔， 打眼"
   },
   {
-    "id": 1906,
+    "id": 1902,
     "word": "teenager",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "十几岁的青少年"
   },
   {
-    "id": 1907,
+    "id": 1903,
     "word": "calendar",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "日历， 月历；日程表"
   },
   {
-    "id": 1908,
+    "id": 1904,
     "word": "garage",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "车库；汽车修理行"
   },
   {
-    "id": 1909,
+    "id": 1905,
     "word": "slipper",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "用拖鞋打；拖鞋；轻便舞鞋"
   },
   {
-    "id": 1910,
+    "id": 1906,
     "word": "subway",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "地铁；地道， 地下过道"
   },
   {
-    "id": 1911,
+    "id": 1907,
     "word": "buy",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "买， 买得；向…行贿， 收买"
   },
   {
-    "id": 1912,
+    "id": 1908,
     "word": "amazing",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "令人惊异的"
   },
   {
-    "id": 1913,
+    "id": 1909,
     "word": "fifteenth",
     "pos": "num./n.",
     "primaryPos": "num",
     "meaning": "第十五；十五分之一"
   },
   {
-    "id": 1914,
+    "id": 1910,
     "word": "unusual",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "不平常的， 少有的；独特的， 与众不同的"
   },
   {
-    "id": 1915,
+    "id": 1911,
     "word": "sink",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "下沉，沉没；洗脸盆；洗涤槽；洗碗池"
   },
   {
-    "id": 1916,
+    "id": 1912,
     "word": "degree",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "度， 度数；程度；学位；地位， 身份"
   },
   {
-    "id": 1917,
+    "id": 1913,
     "word": "ocean",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "洋， 海洋；许多， 大量"
   },
   {
-    "id": 1918,
+    "id": 1914,
     "word": "solve",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "解决， 处理；解答"
   },
   {
-    "id": 1919,
+    "id": 1915,
     "word": "desk",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "书桌， 办公桌"
   },
   {
-    "id": 1920,
+    "id": 1916,
     "word": "know",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "知道， 了解；认识， 熟悉；通晓， 会；认出， 分辨"
   },
   {
-    "id": 1921,
+    "id": 1917,
     "word": "sing",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "唱， 演唱；鸡鸣"
   },
   {
-    "id": 1922,
+    "id": 1918,
     "word": "support",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "支撑， 扶持， 拥护；供养， 赡养；维持"
   },
   {
-    "id": 1923,
+    "id": 1919,
     "word": "yang",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "阳"
   },
   {
-    "id": 1924,
+    "id": 1920,
     "word": "life",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "生命， 性命；一生， 寿命；生活， 生存；人生"
   },
   {
-    "id": 1925,
+    "id": 1921,
     "word": "cola",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "可乐饮料"
   },
   {
-    "id": 1926,
+    "id": 1922,
     "word": "honey",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "蜜， 蜂蜜；甜蜜；宝贝儿， 亲爱的"
   },
   {
-    "id": 1927,
+    "id": 1923,
     "word": "teach",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "教， 讲授；教导， 教训"
   },
   {
-    "id": 1928,
+    "id": 1924,
     "word": "argue",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "争论， 争吵， 争辩；提出理由证明， 主张；说服， 劝说"
   },
   {
-    "id": 1929,
+    "id": 1925,
     "word": "specially",
     "pos": "adv.",
     "primaryPos": "adv",
     "meaning": "特意地， 专门地；格外地， 特别地， 特殊地"
   },
   {
-    "id": 1930,
+    "id": 1926,
     "word": "accessory",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "附件， 零件， 配件；装饰品"
   },
   {
-    "id": 1931,
+    "id": 1927,
     "word": "shampoo",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "洗发剂；洗涤剂 vt. 用洗发剂洗头"
   },
   {
-    "id": 1932,
+    "id": 1928,
     "word": "yogurt",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "酸奶， 酵母乳"
   },
   {
-    "id": 1933,
+    "id": 1929,
     "word": "type",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "打；类型，种类；铅字"
   },
   {
-    "id": 1934,
+    "id": 1930,
     "word": "come",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "来， 来到；达到， 至；产生， 来；变成"
   },
   {
-    "id": 1935,
+    "id": 1931,
     "word": "scared",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "惊恐的， 恐惧的"
   },
   {
-    "id": 1936,
+    "id": 1932,
     "word": "musician",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "音乐家， 乐师"
   },
   {
-    "id": 1937,
+    "id": 1933,
     "word": "wear",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "穿着， 戴着， 留；面露， 面带， 呈现；磨损， 用旧"
   },
   {
-    "id": 1938,
+    "id": 1934,
     "word": "overseas",
     "pos": "adv./adj.",
     "primaryPos": "adv",
     "meaning": "在海外，在国外；海外的， 国外的，"
   },
   {
-    "id": 1939,
+    "id": 1935,
     "word": "impress",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "给…深刻印象， 使铭记"
   },
   {
-    "id": 1940,
+    "id": 1936,
     "word": "feature",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "特征，特色"
   },
   {
-    "id": 1941,
+    "id": 1937,
     "word": "get",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "获得， 弄到；收到；变得；拿来"
   },
   {
-    "id": 1942,
+    "id": 1938,
     "word": "regular",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "规则的；有规律的， 定期的；整齐的， 匀称的；正规的， 正式的"
   },
   {
-    "id": 1943,
+    "id": 1939,
     "word": "sell",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "卖， 出售；推销"
   },
   {
-    "id": 1944,
+    "id": 1940,
     "word": "emotion",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "感情；激情；情绪"
   },
   {
-    "id": 1945,
+    "id": 1941,
     "word": "etiquette",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "礼节， 礼仪"
   },
   {
-    "id": 1946,
+    "id": 1942,
     "word": "queue",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "排队；行列"
   },
   {
-    "id": 1947,
+    "id": 1943,
     "word": "impolite",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "不礼貌的， 粗鲁的"
   },
   {
-    "id": 1948,
+    "id": 1944,
     "word": "reveal",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "揭露， 揭示；泄露；展现， 显示"
   },
   {
-    "id": 1949,
+    "id": 1945,
     "word": "onion",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "洋葱， 洋葱类植物"
   },
   {
-    "id": 1950,
+    "id": 1946,
     "word": "negative",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "否定的；消极的；负的；底片"
   },
   {
-    "id": 1951,
+    "id": 1947,
     "word": "realistic",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "现实的；现实主义的；逼真的"
   },
   {
-    "id": 1952,
+    "id": 1948,
     "word": "monster",
     "pos": "adj./n.",
     "primaryPos": "adj",
     "meaning": "巨大的， 庞大的；怪物；妖怪；巨人，巨兽，巨大的东西"
   },
   {
-    "id": 1953,
+    "id": 1949,
     "word": "tag",
     "pos": "n./v.",
     "primaryPos": "n",
     "meaning": "标签，标牌；给…加上标签，给…挂上标牌"
   },
   {
-    "id": 1954,
+    "id": 1950,
     "word": "blow",
     "pos": "v./n.",
     "primaryPos": "v",
-    "meaning": "〔风〕吹，刮；打击"
+    "meaning": "吹，刮；打击"
   },
   {
-    "id": 1955,
+    "id": 1951,
     "word": "earthquake",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "地震"
   },
   {
-    "id": 1956,
+    "id": 1952,
     "word": "towards",
     "pos": "prep.",
     "primaryPos": "prep",
     "meaning": "向， 朝， 面对；接近"
   },
   {
-    "id": 1957,
+    "id": 1953,
     "word": "send",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "送， 寄；派遣， 打发；发送；发射"
   },
   {
-    "id": 1958,
+    "id": 1954,
     "word": "purpose",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "目的， 意图；用途；效果"
   },
   {
-    "id": 1959,
+    "id": 1955,
     "word": "flee",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "逃离， 逃跑"
   },
   {
-    "id": 1960,
+    "id": 1956,
     "word": "hero",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "英雄， 勇士；男主角， 男主人公"
   },
   {
-    "id": 1961,
+    "id": 1957,
     "word": "award",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "授予，给予；判给；奖， 奖品；报酬， 津贴"
   },
   {
-    "id": 1962,
+    "id": 1958,
     "word": "organize",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "组织， 安排；使有条理；使有机化"
   },
   {
-    "id": 1963,
+    "id": 1959,
     "word": "disappointing",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "令人失望的， 令人扫兴的"
   },
   {
-    "id": 1964,
+    "id": 1960,
     "word": "player",
     "pos": "n.",
     "primaryPos": "n",
     "meaning": "选手， 队员；做游戏的人；演员；演奏者"
   },
   {
-    "id": 1965,
+    "id": 1961,
     "word": "cost",
     "pos": "n./v.",
     "primaryPos": "n",
-    "meaning": "费用；成本；价格为；需支付〔某一数量的钱〕"
+    "meaning": "费用；成本；价格为；需支付"
   },
   {
-    "id": 1966,
+    "id": 1962,
     "word": "satisfy",
     "pos": "v.",
     "primaryPos": "v",
     "meaning": "满足， 满意；确信， 信服"
   },
   {
-    "id": 1967,
+    "id": 1963,
     "word": "will",
-    "pos": "n./v.",
-    "primaryPos": "n",
-    "meaning": "modal verb. 将，会，要〔用于构成将来时〕；意志，毅力，决心；设法用意志力驱使〔某事发生〕"
+    "pos": "aux./n./v.",
+    "primaryPos": "aux",
+    "meaning": "将；会；愿意；意志；决心"
   },
   {
-    "id": 1968,
+    "id": 1964,
     "word": "really",
     "pos": "adv.",
     "primaryPos": "adv",
     "meaning": "真正地， 实际上；很， 十分， 全然"
   },
   {
-    "id": 1969,
+    "id": 1965,
     "word": "challenge",
     "pos": "v./n.",
     "primaryPos": "v",
     "meaning": "向…挑战；对…质疑；挑战，艰巨任务；质疑，质询"
   },
   {
-    "id": 1970,
+    "id": 1966,
     "word": "wild",
     "pos": "adj.",
     "primaryPos": "adj",
     "meaning": "野生的， 未驯化的；荒凉的， 荒芜的；狂热的， 疯狂的；野蛮的，"
+  },
+  {
+    "id": 1967,
+    "word": "recognize",
+    "pos": "v.",
+    "primaryPos": "v",
+    "meaning": "认出；认识；承认"
+  },
+  {
+    "id": 1968,
+    "word": "curious",
+    "pos": "adj.",
+    "primaryPos": "adj",
+    "meaning": "好奇的；求知欲强的"
+  },
+  {
+    "id": 1969,
+    "word": "disappointed",
+    "pos": "adj.",
+    "primaryPos": "adj",
+    "meaning": "失望的；沮丧的"
+  },
+  {
+    "id": 1970,
+    "word": "energetic",
+    "pos": "adj.",
+    "primaryPos": "adj",
+    "meaning": "精力充沛的；积极的"
+  },
+  {
+    "id": 1971,
+    "word": "grateful",
+    "pos": "adj.",
+    "primaryPos": "adj",
+    "meaning": "感激的；感谢的"
+  },
+  {
+    "id": 1972,
+    "word": "independent",
+    "pos": "adj.",
+    "primaryPos": "adj",
+    "meaning": "独立的；自主的"
+  },
+  {
+    "id": 1973,
+    "word": "relaxed",
+    "pos": "adj.",
+    "primaryPos": "adj",
+    "meaning": "放松的；自在的"
+  },
+  {
+    "id": 1974,
+    "word": "satisfied",
+    "pos": "adj.",
+    "primaryPos": "adj",
+    "meaning": "满意的；满足的"
+  },
+  {
+    "id": 1975,
+    "word": "exactly",
+    "pos": "adv.",
+    "primaryPos": "adv",
+    "meaning": "确切地；正是；完全正确"
+  },
+  {
+    "id": 1976,
+    "word": "moreover",
+    "pos": "adv.",
+    "primaryPos": "adv",
+    "meaning": "而且；此外"
+  },
+  {
+    "id": 1977,
+    "word": "otherwise",
+    "pos": "adv.",
+    "primaryPos": "adv",
+    "meaning": "否则；不然；在其他方面"
+  },
+  {
+    "id": 1978,
+    "word": "suddenly",
+    "pos": "adv.",
+    "primaryPos": "adv",
+    "meaning": "突然地"
+  },
+  {
+    "id": 1979,
+    "word": "tradition",
+    "pos": "n.",
+    "primaryPos": "n",
+    "meaning": "传统；惯例"
+  },
+  {
+    "id": 1980,
+    "word": "digital",
+    "pos": "adj.",
+    "primaryPos": "adj",
+    "meaning": "数字的；数码的"
+  },
+  {
+    "id": 1981,
+    "word": "responsibility",
+    "pos": "n.",
+    "primaryPos": "n",
+    "meaning": "责任；职责"
+  },
+  {
+    "id": 1982,
+    "word": "community",
+    "pos": "n.",
+    "primaryPos": "n",
+    "meaning": "社区；团体；社会"
+  },
+  {
+    "id": 1983,
+    "word": "heritage",
+    "pos": "n.",
+    "primaryPos": "n",
+    "meaning": "遗产；传统"
+  },
+  {
+    "id": 1984,
+    "word": "resource",
+    "pos": "n.",
+    "primaryPos": "n",
+    "meaning": "资源；资料"
+  },
+  {
+    "id": 1985,
+    "word": "climate",
+    "pos": "n.",
+    "primaryPos": "n",
+    "meaning": "气候"
+  },
+  {
+    "id": 1986,
+    "word": "reduce",
+    "pos": "v.",
+    "primaryPos": "v",
+    "meaning": "减少；降低"
+  },
+  {
+    "id": 1987,
+    "word": "explore",
+    "pos": "v.",
+    "primaryPos": "v",
+    "meaning": "探索；考察"
+  },
+  {
+    "id": 1988,
+    "word": "respect",
+    "pos": "n./v.",
+    "primaryPos": "n",
+    "meaning": "尊重；敬意"
+  },
+  {
+    "id": 1989,
+    "word": "relationship",
+    "pos": "n.",
+    "primaryPos": "n",
+    "meaning": "关系；联系"
+  },
+  {
+    "id": 1990,
+    "word": "habit",
+    "pos": "n.",
+    "primaryPos": "n",
+    "meaning": "习惯"
+  },
+  {
+    "id": 1991,
+    "word": "context",
+    "pos": "n.",
+    "primaryPos": "n",
+    "meaning": "上下文；语境；背景"
+  },
+  {
+    "id": 1992,
+    "word": "detail",
+    "pos": "n.",
+    "primaryPos": "n",
+    "meaning": "细节；详情"
+  },
+  {
+    "id": 1993,
+    "word": "meaningful",
+    "pos": "adj.",
+    "primaryPos": "adj",
+    "meaning": "有意义的"
+  },
+  {
+    "id": 1994,
+    "word": "environmental",
+    "pos": "adj.",
+    "primaryPos": "adj",
+    "meaning": "环境的；环保的"
+  },
+  {
+    "id": 1995,
+    "word": "carefully",
+    "pos": "adv.",
+    "primaryPos": "adv",
+    "meaning": "仔细地；小心地"
+  },
+  {
+    "id": 1996,
+    "word": "finally",
+    "pos": "adv.",
+    "primaryPos": "adv",
+    "meaning": "最后；终于"
+  },
+  {
+    "id": 1997,
+    "word": "actually",
+    "pos": "adv.",
+    "primaryPos": "adv",
+    "meaning": "实际上；事实上"
+  },
+  {
+    "id": 1998,
+    "word": "recently",
+    "pos": "adv.",
+    "primaryPos": "adv",
+    "meaning": "最近；近来"
+  },
+  {
+    "id": 1999,
+    "word": "mainly",
+    "pos": "adv.",
+    "primaryPos": "adv",
+    "meaning": "主要地；大体上"
+  },
+  {
+    "id": 2000,
+    "word": "widely",
+    "pos": "adv.",
+    "primaryPos": "adv",
+    "meaning": "广泛地；普遍地"
   }
 ]
