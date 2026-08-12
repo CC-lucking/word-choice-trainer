@@ -19,15 +19,29 @@ type WordProgress = {
 };
 
 type ProgressMap = Record<string, WordProgress>;
-type Screen = "home" | "quiz" | "summary";
+type Screen = "home" | "quiz" | "summary" | "wrongbook";
 type QuizMode = "new" | "wrong";
+type WrongbookTab = "active" | "mastered";
 
 type Option = {
   id: number;
+  pos: string;
   meaning: string;
 };
 
+type SavedSession = {
+  version: 1;
+  mode: QuizMode;
+  queueWords: string[];
+  currentIndex: number;
+  sessionCorrect: number;
+  sessionWrong: number;
+  sessionMistakes: Record<string, number>;
+  savedAt: string;
+};
+
 const STORAGE_KEY = "word-choice-trainer-progress-v1";
+const SESSION_STORAGE_KEY = `${STORAGE_KEY}-active-session`;
 
 const semanticBuckets = [
   { name: "emotion", test: /高兴|快乐|悲伤|难过|害怕|担心|紧张|生气|惊讶|满意|自豪|失望|感激|情绪|心情/ },
@@ -94,8 +108,8 @@ function buildOptions(current: WordEntry, allWords: WordEntry[]): Option[] {
   }
 
   return shuffle([
-    { id: current.id, meaning: current.meaning },
-    ...distractors.map((item) => ({ id: item.id, meaning: item.meaning })),
+    { id: current.id, pos: current.pos, meaning: current.meaning },
+    ...distractors.map((item) => ({ id: item.id, pos: item.pos, meaning: item.meaning })),
   ]);
 }
 
@@ -124,11 +138,17 @@ export default function Home() {
   const [countdown, setCountdown] = useState(3);
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [sessionWrong, setSessionWrong] = useState(0);
+  const [sessionMistakes, setSessionMistakes] = useState<Record<string, number>>({});
+  const [masteryNotice, setMasteryNotice] = useState("");
+  const [wrongbookTab, setWrongbookTab] = useState<WrongbookTab>("active");
+  const [savedSession, setSavedSession] = useState<SavedSession | null>(null);
   const [loadError, setLoadError] = useState(false);
   const queueRef = useRef<WordEntry[]>([]);
   const indexRef = useRef(0);
   const transitionRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const countdownRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const skipNextAutoSpeakRef = useRef(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     fetch("/words.json")
@@ -136,7 +156,26 @@ export default function Home() {
         if (!response.ok) throw new Error("词库加载失败");
         return response.json();
       })
-      .then((data: WordEntry[]) => setWords(data))
+      .then((data: WordEntry[]) => {
+        setWords(data);
+        try {
+          const rawSession = window.localStorage.getItem(SESSION_STORAGE_KEY);
+          if (rawSession) {
+            const parsed = JSON.parse(rawSession) as SavedSession;
+            const availableWords = new Set(data.map((word) => word.word));
+            const isValid = parsed.version === 1
+              && Array.isArray(parsed.queueWords)
+              && parsed.queueWords.length > 0
+              && parsed.queueWords.every((word) => availableWords.has(word))
+              && parsed.currentIndex >= 0
+              && parsed.currentIndex < parsed.queueWords.length;
+            if (isValid) setSavedSession(parsed);
+            else window.localStorage.removeItem(SESSION_STORAGE_KEY);
+          }
+        } catch {
+          window.localStorage.removeItem(SESSION_STORAGE_KEY);
+        }
+      })
       .catch(() => setLoadError(true));
 
     try {
@@ -144,9 +183,18 @@ export default function Home() {
       if (saved) setProgress(JSON.parse(saved));
       const savedAutoSpeak = window.localStorage.getItem(`${STORAGE_KEY}-auto-speak`);
       if (savedAutoSpeak !== null) setAutoSpeak(savedAutoSpeak === "true");
+      const savedRoundSize = Number(window.localStorage.getItem(`${STORAGE_KEY}-round-size`));
+      if (savedRoundSize >= 5 && savedRoundSize <= 200) setRoundSize(savedRoundSize);
     } catch {
       // Private browsing can disable local storage; the session still works.
     }
+  }, []);
+
+  useEffect(() => {
+    if (!("serviceWorker" in navigator) || window.location.protocol !== "https:") return;
+    navigator.serviceWorker.register("/sw.js").catch(() => {
+      // Installation and offline mode are optional; online practice still works.
+    });
   }, []);
 
   useEffect(() => {
@@ -173,11 +221,41 @@ export default function Home() {
     }
   }, [autoSpeak]);
 
-  const speak = useCallback((word: string) => {
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(`${STORAGE_KEY}-round-size`, String(roundSize));
+    } catch {
+      // Preference persistence is optional.
+    }
+  }, [roundSize]);
+
+  useEffect(() => {
+    if (screen !== "quiz" || !queue.length || answerState) return;
+    const snapshot: SavedSession = {
+      version: 1,
+      mode,
+      queueWords: queue.map((word) => word.word),
+      currentIndex,
+      sessionCorrect,
+      sessionWrong,
+      sessionMistakes,
+      savedAt: new Date().toISOString(),
+    };
+    setSavedSession(snapshot);
+    try {
+      window.localStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(snapshot));
+    } catch {
+      // Resuming is an optional device-local convenience.
+    }
+  }, [answerState, currentIndex, mode, queue, screen, sessionCorrect, sessionMistakes, sessionWrong]);
+
+  const speakWithSystemVoice = useCallback((word: string) => {
     if (!("speechSynthesis" in window)) return;
-    window.speechSynthesis.cancel();
+    const synth = window.speechSynthesis;
+    synth.cancel();
+    synth.resume();
     const utterance = new SpeechSynthesisUtterance(word);
-    const voices = window.speechSynthesis.getVoices();
+    const voices = synth.getVoices();
     const americanVoice = voices.find(
       (voice) => voice.lang.toLowerCase() === "en-us" || /us english|american/i.test(voice.name),
     );
@@ -185,8 +263,37 @@ export default function Home() {
     utterance.lang = "en-US";
     utterance.rate = 0.85;
     utterance.pitch = 1;
-    window.speechSynthesis.speak(utterance);
+    utterance.volume = 1;
+    synth.speak(utterance);
   }, []);
+
+  const speak = useCallback((word: string) => {
+    if (!("Audio" in window)) {
+      speakWithSystemVoice(word);
+      return;
+    }
+
+    const audio = audioRef.current ?? new Audio();
+    audioRef.current = audio;
+    audio.onerror = null;
+    audio.pause();
+    audio.currentTime = 0;
+    audio.preload = "auto";
+    audio.volume = 1;
+    audio.src = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(word)}&type=2`;
+
+    let usedFallback = false;
+    const fallback = () => {
+      if (usedFallback) return;
+      usedFallback = true;
+      audio.onerror = null;
+      speakWithSystemVoice(word);
+    };
+
+    audio.onerror = fallback;
+    const playback = audio.play();
+    playback?.catch(fallback);
+  }, [speakWithSystemVoice]);
 
   const currentWord = queue[currentIndex];
 
@@ -196,6 +303,11 @@ export default function Home() {
     setSelectedId(null);
     setAnswerState(null);
     setCountdown(3);
+    setMasteryNotice("");
+    if (skipNextAutoSpeakRef.current) {
+      skipNextAutoSpeakRef.current = false;
+      return;
+    }
     const pronunciationTimer = setTimeout(() => {
       if (autoSpeak) speak(currentWord.word);
     }, 120);
@@ -206,17 +318,18 @@ export default function Home() {
     const entries = Object.values(progress);
     const seen = entries.filter((item) => item.correctCount + item.wrongCount > 0).length;
     const wrong = entries.filter((item) => item.activeWrong).length;
+    const mastered = entries.filter((item) => item.wrongCount > 0 && !item.activeWrong).length;
     const correctAnswers = entries.reduce((sum, item) => sum + item.correctCount, 0);
     const wrongAnswers = entries.reduce((sum, item) => sum + item.wrongCount, 0);
     const totalAnswers = correctAnswers + wrongAnswers;
     const accuracy = totalAnswers ? Math.round((correctAnswers / totalAnswers) * 100) : 0;
-    return { seen, wrong, accuracy, totalAnswers };
-  }, [progress]);
+    return { seen, unseen: Math.max(words.length - seen, 0), wrong, mastered, accuracy, totalAnswers };
+  }, [progress, words.length]);
 
   const saveAnswer = useCallback((word: WordEntry, correct: boolean) => {
     setProgress((previous) => {
       const current = previous[word.word] ?? emptyProgress();
-      const consecutiveCorrect = correct ? current.consecutiveCorrect + 1 : 0;
+      const consecutiveCorrect = correct && current.activeWrong ? current.consecutiveCorrect + 1 : 0;
       return {
         ...previous,
         [word.word]: {
@@ -233,6 +346,8 @@ export default function Home() {
   const finishOrAdvance = useCallback((activeQueue: WordEntry[]) => {
     const nextIndex = indexRef.current + 1;
     if (nextIndex >= activeQueue.length) {
+      setSavedSession(null);
+      window.localStorage.removeItem(SESSION_STORAGE_KEY);
       setScreen("summary");
       window.speechSynthesis?.cancel();
       return;
@@ -247,6 +362,13 @@ export default function Home() {
       const isCorrect = option.id === currentWord.id;
       setSelectedId(option.id);
       setAnswerState(isCorrect ? "correct" : "wrong");
+      const currentProgress = progress[currentWord.word] ?? emptyProgress();
+      if (isCorrect && currentProgress.activeWrong) {
+        const nextStreak = currentProgress.consecutiveCorrect + 1;
+        setMasteryNotice(nextStreak >= 2 ? "已掌握，移入历史错题" : "还需连续答对 1 次");
+      } else {
+        setMasteryNotice("");
+      }
       saveAnswer(currentWord, isCorrect);
 
       if (isCorrect) {
@@ -256,6 +378,10 @@ export default function Home() {
       }
 
       setSessionWrong((value) => value + 1);
+      setSessionMistakes((previous) => ({
+        ...previous,
+        [currentWord.word]: (previous[currentWord.word] ?? 0) + 1,
+      }));
       speak(currentWord.word);
       const nextQueue = [...queueRef.current];
       const reinsertAt = Math.min(indexRef.current + 6, nextQueue.length);
@@ -274,7 +400,7 @@ export default function Home() {
         finishOrAdvance(nextQueue);
       }, 3000);
     },
-    [answerState, currentWord, finishOrAdvance, saveAnswer, speak],
+    [answerState, currentWord, finishOrAdvance, progress, saveAnswer, speak],
   );
 
   useEffect(() => {
@@ -294,15 +420,18 @@ export default function Home() {
     () => () => {
       if (transitionRef.current) clearTimeout(transitionRef.current);
       if (countdownRef.current) clearInterval(countdownRef.current);
+      audioRef.current?.pause();
       window.speechSynthesis?.cancel();
     },
     [],
   );
 
-  function startQuiz(nextMode: QuizMode) {
+  function startQuiz(nextMode: QuizMode, selectedWords?: WordEntry[]) {
     if (!words.length) return;
     let candidates: WordEntry[];
-    if (nextMode === "wrong") {
+    if (selectedWords?.length) {
+      candidates = [...selectedWords];
+    } else if (nextMode === "wrong") {
       candidates = words.filter((word) => progress[word.word]?.activeWrong);
       if (!candidates.length) return;
       candidates.sort(
@@ -314,7 +443,15 @@ export default function Home() {
       candidates = [...unseen, ...seen];
     }
 
-    const nextQueue = candidates.slice(0, nextMode === "wrong" ? Math.max(roundSize, candidates.length) : roundSize);
+    const nextQueue = nextMode === "wrong"
+      ? [...shuffle(candidates), ...shuffle(candidates)]
+      : candidates.slice(0, roundSize);
+    if (autoSpeak && nextQueue[0]) {
+      // Mobile browsers may block speech started from a timer or effect. The
+      // first pronunciation is therefore triggered directly by this tap.
+      skipNextAutoSpeakRef.current = true;
+      speak(nextQueue[0].word);
+    }
     setMode(nextMode);
     setQueue(nextQueue);
     queueRef.current = nextQueue;
@@ -322,12 +459,62 @@ export default function Home() {
     indexRef.current = 0;
     setSessionCorrect(0);
     setSessionWrong(0);
+    setSessionMistakes({});
+    setMasteryNotice("");
     setScreen("quiz");
+  }
+
+  function resumeQuiz() {
+    if (!savedSession) return;
+    const wordMap = new Map(words.map((word) => [word.word, word]));
+    const restoredQueue = savedSession.queueWords
+      .map((word) => wordMap.get(word))
+      .filter((word): word is WordEntry => Boolean(word));
+    if (!restoredQueue.length || savedSession.currentIndex >= restoredQueue.length) {
+      setSavedSession(null);
+      window.localStorage.removeItem(SESSION_STORAGE_KEY);
+      return;
+    }
+    if (autoSpeak) {
+      skipNextAutoSpeakRef.current = true;
+      speak(restoredQueue[savedSession.currentIndex].word);
+    }
+    setMode(savedSession.mode);
+    setQueue(restoredQueue);
+    queueRef.current = restoredQueue;
+    setCurrentIndex(savedSession.currentIndex);
+    indexRef.current = savedSession.currentIndex;
+    setSessionCorrect(savedSession.sessionCorrect);
+    setSessionWrong(savedSession.sessionWrong);
+    setSessionMistakes(savedSession.sessionMistakes);
+    setMasteryNotice("");
+    setScreen("quiz");
+  }
+
+  function reviewSessionMistakes() {
+    const sessionWords = words.filter((word) => sessionMistakes[word.word]);
+    if (sessionWords.length) startQuiz("wrong", sessionWords);
+  }
+
+  function setWrongWordStatus(word: WordEntry, activeWrong: boolean) {
+    setProgress((previous) => {
+      const current = previous[word.word] ?? emptyProgress();
+      return {
+        ...previous,
+        [word.word]: {
+          ...current,
+          activeWrong,
+          consecutiveCorrect: activeWrong ? 0 : Math.max(current.consecutiveCorrect, 2),
+          lastAnsweredAt: new Date().toISOString(),
+        },
+      };
+    });
   }
 
   function returnHome() {
     if (transitionRef.current) clearTimeout(transitionRef.current);
     if (countdownRef.current) clearInterval(countdownRef.current);
+    audioRef.current?.pause();
     window.speechSynthesis?.cancel();
     setScreen("home");
     setAnswerState(null);
@@ -336,7 +523,9 @@ export default function Home() {
   function resetProgress() {
     if (!window.confirm("确定清空全部学习记录和错题吗？此操作无法撤销。")) return;
     setProgress({});
+    setSavedSession(null);
     window.localStorage.removeItem(STORAGE_KEY);
+    window.localStorage.removeItem(SESSION_STORAGE_KEY);
   }
 
   if (loadError) {
@@ -391,8 +580,6 @@ export default function Home() {
               <span>发音</span>
             </button>
           </div>
-          <div className="part-of-speech">{currentWord.pos}</div>
-
           <div className="option-grid">
             {options.map((option, index) => {
               const isCorrectOption = option.id === correctOptionId;
@@ -409,7 +596,8 @@ export default function Home() {
                   disabled={Boolean(answerState)}
                 >
                   <span className="option-index">{index + 1}</span>
-                  <span>{option.meaning}</span>
+                  <span className="option-pos">{option.pos}</span>
+                  <span className="option-meaning">{option.meaning}</span>
                 </button>
               );
             })}
@@ -418,11 +606,17 @@ export default function Home() {
           <div className={`answer-feedback ${answerState ? "feedback-visible" : ""}`}>
             {answerState === "wrong" ? (
               <>
-                <strong>{currentWord.meaning}</strong>
+                <strong>
+                  <span className="feedback-pos">{currentWord.pos}</span>
+                  {currentWord.meaning}
+                </strong>
                 <span>{countdown} 秒后继续，这个词稍后还会再出现</span>
               </>
             ) : answerState === "correct" ? (
-              <strong>正确</strong>
+              <>
+                <strong>正确</strong>
+                {masteryNotice && <span>{masteryNotice}</span>}
+              </>
             ) : (
               <span>按数字键 1–4 也可以选择</span>
             )}
@@ -435,6 +629,7 @@ export default function Home() {
   if (screen === "summary") {
     const attempts = sessionCorrect + sessionWrong;
     const accuracy = attempts ? Math.round((sessionCorrect / attempts) * 100) : 0;
+    const sessionWrongWords = words.filter((word) => sessionMistakes[word.word]);
     return (
       <main className="summary-shell">
         <section className="summary-card">
@@ -449,10 +644,34 @@ export default function Home() {
             <div><strong>{sessionWrong}</strong><span>答错</span></div>
             <div><strong>{metrics.wrong}</strong><span>待巩固</span></div>
           </div>
+          <div className="session-wrong-section">
+            <div className="session-wrong-heading">
+              <strong>{sessionWrongWords.length ? `本轮错词 · ${sessionWrongWords.length}` : "本轮全部正确"}</strong>
+              {sessionWrongWords.length > 0 && <span>同一单词只列一次</span>}
+            </div>
+            {sessionWrongWords.length > 0 && (
+              <div className="session-wrong-list">
+                {sessionWrongWords.map((word) => (
+                  <div key={word.id}>
+                    <span className="summary-word">
+                      <strong>{word.word}</strong>
+                      <small>{word.pos}</small>
+                    </span>
+                    <span className="summary-meaning">{word.meaning}</span>
+                    <span className="wrong-count">本轮错 {sessionMistakes[word.word]} 次</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
           <div className="summary-actions">
-            <button className="primary-button" onClick={() => startQuiz(mode)}>
-              再来一轮
+            {sessionWrongWords.length > 0 && (
+              <button className="primary-button" onClick={reviewSessionMistakes}>立即复习本轮错题</button>
+            )}
+            <button className={sessionWrongWords.length ? "secondary-button" : "primary-button"} onClick={() => startQuiz("new")}>
+              再刷一轮新词
             </button>
+            <button className="secondary-button" onClick={() => setScreen("wrongbook")}>查看全部错题</button>
             <button className="secondary-button" onClick={returnHome}>
               返回首页
             </button>
@@ -462,10 +681,93 @@ export default function Home() {
     );
   }
 
-  const topWrongWords = words
+  const activeWrongWords = words
     .filter((word) => progress[word.word]?.activeWrong)
-    .sort((a, b) => (progress[b.word]?.wrongCount ?? 0) - (progress[a.word]?.wrongCount ?? 0))
-    .slice(0, 6);
+    .sort((a, b) => (progress[b.word]?.wrongCount ?? 0) - (progress[a.word]?.wrongCount ?? 0));
+  const masteredWrongWords = words
+    .filter((word) => progress[word.word]?.wrongCount > 0 && !progress[word.word]?.activeWrong)
+    .sort((a, b) => Date.parse(progress[b.word].lastAnsweredAt) - Date.parse(progress[a.word].lastAnsweredAt));
+
+  if (screen === "wrongbook") {
+    const displayedWords = wrongbookTab === "active" ? activeWrongWords : masteredWrongWords;
+    return (
+      <main className="wrongbook-shell">
+        <header className="wrongbook-page-header">
+          <button className="text-button" onClick={returnHome}>← 返回首页</button>
+          <div>
+            <p className="eyebrow">完整错题本</p>
+            <h1>把错过的词，真正练会。</h1>
+            <p>待巩固词连续答对两次后，会进入“已掌握”，不会从历史中消失。</p>
+          </div>
+          {activeWrongWords.length > 0 && (
+            <button className="primary-button" onClick={() => startQuiz("wrong")}>复习全部待巩固</button>
+          )}
+        </header>
+
+        <div className="wrongbook-tabs" role="tablist" aria-label="错题分类">
+          <button
+            role="tab"
+            aria-selected={wrongbookTab === "active"}
+            className={wrongbookTab === "active" ? "tab-active" : ""}
+            onClick={() => setWrongbookTab("active")}
+          >
+            待巩固 <span>{activeWrongWords.length}</span>
+          </button>
+          <button
+            role="tab"
+            aria-selected={wrongbookTab === "mastered"}
+            className={wrongbookTab === "mastered" ? "tab-active" : ""}
+            onClick={() => setWrongbookTab("mastered")}
+          >
+            已掌握 <span>{masteredWrongWords.length}</span>
+          </button>
+        </div>
+
+        {displayedWords.length ? (
+          <div className="wrongbook-table">
+            <div className="wrongbook-table-head">
+              <span>单词</span><span>中文释义</span><span>学习情况</span><span>操作</span>
+            </div>
+            {displayedWords.map((word) => {
+              const item = progress[word.word];
+              const mastery = Math.min(item.consecutiveCorrect, 2);
+              return (
+                <article className="wrongbook-row" key={word.id}>
+                  <div className="wrongbook-word">
+                    <strong>{word.word}</strong>
+                    <span>{word.pos}</span>
+                  </div>
+                  <div className="wrongbook-meaning">{word.meaning}</div>
+                  <div className="wrongbook-progress">
+                    <span>累计错 {item.wrongCount} 次</span>
+                    {wrongbookTab === "active" ? (
+                      <span>连续答对 {mastery}/2</span>
+                    ) : (
+                      <span className="mastered-label">已掌握</span>
+                    )}
+                  </div>
+                  <div className="wrongbook-actions">
+                    <button onClick={() => speak(word.word)} aria-label={`播放 ${word.word} 的发音`}>发音</button>
+                    <button onClick={() => startQuiz("wrong", [word])}>单练</button>
+                    <button onClick={() => setWrongWordStatus(word, wrongbookTab !== "active")}>
+                      {wrongbookTab === "active" ? "标记掌握" : "重新巩固"}
+                    </button>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="wrongbook-empty">
+            <strong>{wrongbookTab === "active" ? "暂时没有待巩固词" : "还没有已掌握的历史错词"}</strong>
+            <p>{wrongbookTab === "active" ? "普通训练中答错的单词会自动加入这里。" : "待巩固词连续答对两次后会保留在这里。"}</p>
+          </div>
+        )}
+      </main>
+    );
+  }
+
+  const topWrongWords = activeWrongWords.slice(0, 6);
 
   return (
     <main className="home-shell">
@@ -486,7 +788,12 @@ export default function Home() {
           </p>
 
           <div className="hero-actions">
-            <button className="primary-button hero-primary" onClick={() => startQuiz("new")}>
+            {savedSession && (
+              <button className="resume-button" onClick={resumeQuiz}>
+                继续上次 · {savedSession.currentIndex + 1}/{savedSession.queueWords.length}
+              </button>
+            )}
+            <button className="primary-button hero-primary" onClick={() => startQuiz("new")}> 
               开始刷词 <span aria-hidden="true">→</span>
             </button>
             <button
@@ -496,13 +803,16 @@ export default function Home() {
             >
               刷错题 {metrics.wrong ? `· ${metrics.wrong}` : ""}
             </button>
+            <button className="secondary-button" onClick={() => setScreen("wrongbook")}>
+              查看错题本
+            </button>
           </div>
 
           <div className="quick-settings">
             <div className="setting-group">
               <span>每轮题数</span>
               <div className="segmented-control" aria-label="选择每轮题数">
-                {[10, 20, 30].map((size) => (
+                {[5, 10, 20, 50].map((size) => (
                   <button
                     key={size}
                     className={roundSize === size ? "segment-active" : ""}
@@ -511,6 +821,20 @@ export default function Home() {
                     {size}
                   </button>
                 ))}
+                <label className="custom-round-size">
+                  <span className="sr-only">自定义每轮题数</span>
+                  <input
+                    type="number"
+                    min="5"
+                    max="200"
+                    value={roundSize}
+                    onChange={(event) => {
+                      const size = Number(event.target.value);
+                      if (Number.isFinite(size)) setRoundSize(Math.min(200, Math.max(5, size)));
+                    }}
+                    aria-label="自定义每轮题数，最少 5 题，最多 200 题"
+                  />
+                </label>
               </div>
             </div>
             <label className="toggle-row">
@@ -542,11 +866,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="metric-strip" aria-label="学习概况">
-        <div><strong>{words.length}</strong><span>去重词汇</span></div>
+      <section className="metric-strip metric-strip-six" aria-label="学习概况">
+        <div><strong>{words.length}</strong><span>全部词汇</span></div>
         <div><strong>{metrics.seen}</strong><span>已经练习</span></div>
-        <div><strong>{metrics.accuracy}%</strong><span>累计正确率</span></div>
+        <div><strong>{metrics.unseen}</strong><span>待学习</span></div>
         <div><strong>{metrics.wrong}</strong><span>错题待巩固</span></div>
+        <div><strong>{metrics.mastered}</strong><span>历史错题已掌握</span></div>
+        <div><strong>{metrics.accuracy}%</strong><span>累计正确率</span></div>
       </section>
 
       <section className="lower-grid">
@@ -567,7 +893,7 @@ export default function Home() {
               <h2>{metrics.wrong ? `${metrics.wrong} 个词待巩固` : "目前没有错词"}</h2>
             </div>
             {metrics.wrong > 0 && (
-              <button className="small-button" onClick={() => startQuiz("wrong")}>立即复习</button>
+              <button className="small-button" onClick={() => setScreen("wrongbook")}>查看全部</button>
             )}
           </div>
           {topWrongWords.length ? (
@@ -583,7 +909,10 @@ export default function Home() {
             <p className="empty-copy">答错的单词会自动出现在这里，并进入重复训练。</p>
           )}
           {metrics.totalAnswers > 0 && (
-            <button className="reset-button" onClick={resetProgress}>清空学习记录</button>
+            <div className="wrongbook-footer-actions">
+              <button className="reset-button" onClick={() => setScreen("wrongbook")}>打开完整错题本</button>
+              <button className="reset-button" onClick={resetProgress}>清空学习记录</button>
+            </div>
           )}
         </aside>
       </section>

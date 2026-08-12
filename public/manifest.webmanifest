@@ -1,0 +1,14 @@
+{
+  "name": "词选｜初中英语四选一识义训练",
+  "short_name": "词选",
+  "description": "听发音，选词义，把单词练成第一反应。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f4ee",
+  "theme_color": "#f6f4ee",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
